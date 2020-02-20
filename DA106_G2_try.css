@@ -56,7 +56,10 @@ table {
 }
 
 /*確保盒模型不破版*/
+
+
 .wrap{
     width: 1500px;
     height: auto;    
 }
+
