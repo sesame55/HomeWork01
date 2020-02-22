@@ -1,6 +1,68 @@
-
-.wrap{
-    width: 1500px;
-    height: auto;    
+.wrap {
+    background: url(../img/123456.jpg) no-repeat fixed center center;
+    background-size: cover;
+    position: relative;
 }
 
+.clear {
+    clear: both;
+}
+
+.content_left {
+    width: 10vw;
+    height: 100vh;
+    background-color: rgb(11, 2, 43);
+    position: relative;
+}
+
+.nav ul li {
+    background-color: rgb(11, 2, 43);
+}
+.nav ul li a {
+    display: block;
+    font-family: '微軟正黑體';
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+/*縮放時文字會破版，加上RWD時再改*/
+
+.nav ul li a:hover {
+    color: rgb(11, 2, 43);
+    background-color: #fff;
+}
+
+.nav_img {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    width: 90vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.link_out {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.link_out img {
+    width: 20%;
+    height: auto;
+    margin: 5px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+}
