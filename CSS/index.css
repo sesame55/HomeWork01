@@ -1,5 +1,6 @@
+/* 背景圖案 */
 .wrap {
-    background: url(../img/123456.jpg) no-repeat fixed center center;
+    background: url(../img/index_img.jpg) no-repeat fixed center center;
     background-size: cover;
     position: relative;
 }
@@ -8,16 +9,22 @@
     clear: both;
 }
 
+
+
+/* 左側選單 */
 .content_left {
+    z-index: 49;
     width: 10vw;
     height: 100vh;
-    background-color: rgb(11, 2, 43);
+    background-color: #0b022b;
     position: relative;
 }
 
+/* 左側選單第1層 */
 .nav ul li {
-    background-color: rgb(11, 2, 43);
+    background-color: #0b022b;
 }
+
 .nav ul li a {
     display: block;
     font-family: '微軟正黑體';
@@ -32,10 +39,39 @@
 /*縮放時文字會破版，加上RWD時再改*/
 
 .nav ul li a:hover {
-    color: rgb(11, 2, 43);
+    color: #0b022b;
     background-color: #fff;
 }
 
+/* 左側選單第2層 */
+.nav_next li{
+    position: relative;
+}
+.nav_next li ul {
+    display: none;
+    position: absolute;
+    left: 100%;/*移到上層ul右側*/
+    top: 0;/*第一行對齊*/
+    width: 10vw;    
+    background-color: #fff;
+    /* border: 5px solid green; */
+}
+.nav_next li:hover ul{
+    display: block;
+}
+.nav_next li ul li{
+    background-color: #fff;
+    z-index: 50;
+}
+.nav_next li ul li a{
+    color: #0b022b;
+}
+.nav_next li ul li a:hover{
+    color: #fff;
+    background-color:#0b022b;
+}
+
+/* 左側選單上方圖案 */
 .nav_img {
     padding-top: 30px;
     padding-left: 20px;
@@ -44,19 +80,12 @@
     height: auto;
 }
 
-.content {
-    width: 90vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
+/* 左側選單下方3個外連結 */
 .link_out {
     position: absolute;
     bottom: 0;
     text-align: center;
+
 }
 
 .link_out img {
@@ -66,3 +95,20 @@
     padding-bottom: 20px;
     vertical-align: middle;
 }
+
+
+
+
+/* 右側內容 */
+.content {
+    width: 90vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+
