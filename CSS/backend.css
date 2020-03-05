@@ -9,6 +9,8 @@ body {
     height: 100%; /*右側內容會出現卷軸*/
     background-color: #25272c;
     position: relative;
+    overflow: hidden;
+    /*JS有點錯誤，先隱藏超過部分*/
 }
 
 .content_left {
