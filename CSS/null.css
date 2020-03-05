@@ -1,0 +1,17 @@
+.wrap {
+    background: none;
+    background-color: #e7e4de;
+    height:100%;
+    position: relative;
+}
+
+.content {    
+    /* background-color: rgb(231, 228, 222); */
+    width: 89%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 200px;
+    /* border: 1px solid green; */
+}
+
