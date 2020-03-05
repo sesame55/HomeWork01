@@ -1,22 +1,19 @@
 html,
 body {
     height: 100%;
-    
 }
 
 /* 背景顏色 */
 .wrap {
     width: 100%;
-    height: 100%;
-    /* background-repeat:repeat-x; */
+    height: 100%; /*右側內容會出現卷軸*/
     background-color: #25272c;
     position: relative;
-overflow: hidden;
 }
 
 .content_left {
     z-index: 49;
-    width: 15vw;
+    width: 250px;
     height: 100vh;
     background-color: #2f3136;
     position: relative;
@@ -24,22 +21,15 @@ overflow: hidden;
 
 /* 上方圖案 */
 .nav {
-    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
 }
-.nav_img {
-    width: 50%;
+.nav img {
+    z-index: 55;
+    width: 100%;
     height: 100%;
-    margin-top: -10%;
-    margin-bottom: 30px;
-    padding: 60px;
-    background-color: #f3f2ef;
-    border: 15px solid #ffd46e;
-    border-radius: 100%;
-    overflow: hidden;
 }
 
 /* 左側選單 */
@@ -84,11 +74,27 @@ overflow: hidden;
 /* 下方圖片 */
 .bottom_img {
     position: absolute;
-    left: -400px;
-    /* bottom: -476.1788635253906px;; */
-    bottom: -870px;
+    left: -165%;
+    bottom: -75%;
     width: 100%;
     height: 100%;
     z-index: 50;
-    transform: rotate(20deg);
+    transform: rotate(15deg);
+}
+
+.bottom_img:hover {
+    left: -120%;
+    bottom: -78%;
+    transform: rotate(5deg);
+}
+
+/* 右側欄位測試 */
+.content_right {
+    background-color: #25272c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 250px;
+    color: #fff;
+    padding-left: 10px;
 }
