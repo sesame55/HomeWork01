@@ -17,7 +17,7 @@ body {
     max-width: 200px;
     height: 100vh;
     background-color: #0b022b;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     /* position: relative; */
