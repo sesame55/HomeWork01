@@ -1,3 +1,6 @@
+//已改為CSS固定
+//以下可全部刪除
+
 $(document).ready(function () {
     $(function () {
         // 先取得 #cart 及其 top 值
