@@ -14,10 +14,13 @@ body{
     right: 0;
     padding-left: 200px;
     /* 內容左推避開選單欄位 */
+    font-size: 50px;
 }
 
 .table{
     margin: 30px;
+    padding: 30px;
     border: 1px solid green;
+    
 }
 
