@@ -1,17 +1,23 @@
+body{
+    background-color: #e7e4de;
+}
+
 .wrap {
     background: none;
-    background-color: #e7e4de;
-    height:100%;
     position: relative;
 }
 
 .content {    
-    /* background-color: rgb(231, 228, 222); */
-    width: 89%;
+    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    margin-left: 200px;
-    /* border: 1px solid green; */
+    padding-left: 200px;
+    /* 內容左推避開選單欄位 */
+}
+
+.table{
+    margin: 30px;
+    border: 1px solid green;
 }
 
