@@ -5,11 +5,11 @@ body {
 }
 
 /* 背景圖案 */
-.wrap {
+/* .wrap {
     background: url(../img/index_img.jpg) no-repeat fixed center center;
     background-size: cover;
     height: 100%;
-}
+} */
 
 /* 左側選單 */
 .content_left {
