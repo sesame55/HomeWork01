@@ -30,6 +30,7 @@
 
 .header_top {
     background: url(../img/index_img.jpg) center right;
+    /* background: url() center right; */
     background-size: cover;
     width: 100vw;
     height: 100vh;
