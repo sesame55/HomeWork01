@@ -23,8 +23,8 @@
     width: 100%;
 }
 
-.header :hover {
-    animation: grow 4s linear forwards;
+.header {
+    animation: grow 3s linear forwards;
     opacity: 1;
 }
 
