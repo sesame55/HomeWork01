@@ -1,0 +1,49 @@
+.wrap {
+    background: none;
+    background-color: #e7e4de;
+    height:100%;
+    position: relative;
+}
+
+.content {
+    
+    /* background-color: rgb(231, 228, 222); */
+    width: 89%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 200px;
+    border: 1px solid green;
+}
+
+/* 中間搜尋欄 */
+.search {
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    float: left;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+.search input {
+    margin: 10px;
+}
+
+/*右側顯示欄  */
+.diary_view {
+    width: 58%;
+    float: left;
+    border: 1px solid red;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.diary_view ul li a {
+    text-decoration: none;
+    display: block;
+}
