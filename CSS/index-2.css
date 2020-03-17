@@ -36,13 +36,6 @@ box-shadow: 1px 1px 1px black;
   /* clear: both; */
 }
 
-/* .nav_bottom{
-    height: 50px;
-    width: 100vw;
-    background-color: #0b022b;
-    z-index: 1;
-} */
-
 /* 左側選單第1層 */
 .nav ul {
   display: flex;
@@ -73,7 +66,7 @@ box-shadow: 1px 1px 1px black;
   height: 30px;
   line-height: 30px;
   width: 100%;
-  /* font-size: 18px; */
+  font-size: medium;
   /* color: #fff; */
   color: #31560e;
   text-decoration: none;
@@ -161,32 +154,14 @@ font-size: 18px;
   display: block;
   margin-top: 12px;
 margin-left: 150px;
+margin-right: 50px;
   width: 300px;
   height: 25px;
   border-radius: 5px;
   /* border:  1px solid green; */
 }
 
-/* 右方外連結_FB,IG,TW */
-.link_out {
-  /* float: right; */
-  /* border: 1px solid blue;  */
-  position: fixed;
-  top: 0;
-  right: 0;
-  text-align: center;
-  display: flex;
-  z-index: 80;
-}
-.link_out img {
-  width: 50%;
-  height: auto;
-  margin: 5px;
-  margin-top: 10px;
-  /* padding-bottom: 20px; */
-  /* vertical-align: middle; */
-  z-index: 80;
-}
+
 
 /* 會員頭像 */
 .log_in{
@@ -239,5 +214,30 @@ margin-left: 150px;
 
 } */
 
+.footer{
+  margin-top: 20px;
+  background-color: #0b022b; 
+  height: 100px;
+  position: relative;
+}
 
-
+/* 右方外連結_FB,IG,TW */
+.link_out {
+  /* float: right; */
+  /* border: 1px solid blue;  */
+  position: absolute;
+  bottom:  10px;
+  right: 0;
+  text-align: center;
+  display: flex;
+  z-index: 80;
+}
+.link_out img {
+  width: 50%;
+  height: auto;
+  margin: 5px;
+  margin-top: 10px;
+  /* padding-bottom: 20px; */
+  /* vertical-align: middle; */
+  z-index: 80;
+}
