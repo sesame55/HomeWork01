@@ -69,17 +69,19 @@ box-shadow: 1px 1px 1px black;
   height: 30px;
   line-height: 30px;
   width: 100%;
-  font-size: 20px;
+  /* font-size: 18px; */
   /* color: #fff; */
   color: #31560e;
   text-decoration: none;
 }
 
-/* .nav ul li a:hover {
-
-  color: #fff;
-  background-color: #31560e;
-} */
+.nav ul li a:hover {
+font-size: 18px;
+/* text-decoration:underline; */
+  /* color: #fff; */
+  /* background-color: #31560e; */
+  border-bottom: 3px solid #31560e;
+}
 
 /* 左側選單第2層 */
 .nav_next li {
@@ -181,7 +183,7 @@ box-shadow: 1px 1px 1px black;
 .log_in{
     position: fixed;
     top:3px;
-    right: -300px;
+    right:-20%;
     z-index: 70;
 
     /* border: 1px solid green; */
