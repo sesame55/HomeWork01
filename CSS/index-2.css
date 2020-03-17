@@ -153,7 +153,8 @@ font-size: 18px;
 .nav input {
   float: left;
   display: block;
-  margin: 12px;
+  margin-top: 12px;
+margin-left: 150px;
   width: 300px;
   height: 25px;
   border-radius: 5px;
@@ -169,6 +170,7 @@ font-size: 18px;
   right: 0;
   text-align: center;
   display: flex;
+  z-index: 80;
 }
 .link_out img {
   width: 50%;
@@ -177,23 +179,28 @@ font-size: 18px;
   margin-top: 10px;
   /* padding-bottom: 20px; */
   /* vertical-align: middle; */
+  z-index: 80;
 }
 
 /* 會員頭像 */
 .log_in{
     position: fixed;
     top:3px;
-    right:-20%;
+    left:7%;
     z-index: 70;
-
-    /* border: 1px solid green; */
-    border-radius:999em;
+  width: 100px;
+  height: 100px;
+    /* border: 5px solid green;
+    border-radius:999em; */
+    display: flex;
+    justify-content:center; 
+    align-items:center;
 }
 
 .log_in img{
-    width: 17%;
-
-    
+    width: 100%;
+    /* text-align: center;
+    line-height: 100%; */
     /* border: 1px solid red; */
     /* text-shadow: 1px 1px 1px black; */
 }
@@ -222,14 +229,21 @@ font-size: 18px;
 
 
 /*RWD*/
+
 /* @media (max-width: 960px) {
   .content_left {
-    width: 150px;
+    
+  }
+}
+
+/* @media (max-width: 960px) {
+  .content_left {
+    
   }
 }
 
 @media (max-width: 375px) {
   .content_left {
-    width: 75px;
+  
   }
 } */
