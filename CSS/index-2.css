@@ -196,15 +196,24 @@ margin-left: 150px;
   margin-right: 30px;
   margin-top: 12px;
   font-family: "微軟正黑體";
-  color: green;
+  color: #fff;
+  background-color:#31560e;
   font-size: 20px;
-  width: 60px;
+  width: 80px;
   text-align: center;
+  border: 1px solid #31560e;
+  border-radius: 20px;
+  padding: 3px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
 }
 
 .sing_in a:hover {
-  padding-top: 1px;
-  border-bottom: 3px solid #31560e;
+  /* padding-top: 1px; */
+  /* border-bottom: 3px solid #31560e; */
+  color: #31560e;
+  background-color:#fff;
+  font-weight: bold;
 }
 
 /* 會員頭像 */
@@ -262,6 +271,25 @@ video {
   /* display: block; */
   margin-top: 100px;
   vertical-align: middle;
+}
+
+/* 向下箭頭 */
+.scroll{
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content:center; 
+  align-items:center; 
+  /* left: 50%; */
+}
+
+.scroll a {
+  text-align: center;
+}
+
+.scroll img{
+  width: 80px;
 }
 
 /* 頁尾 */

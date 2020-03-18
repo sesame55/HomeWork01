@@ -44,7 +44,7 @@
     margin: 0 auto;
   
   }
-  
+
   .content_box_shop{
     display: flex;
     justify-content:center; 
@@ -109,6 +109,11 @@
     color: #31560e;
   }
   
+.more a:hover{
+  background-color: #31560e;
+  color: #fff;
+}
+
   /* 內容-直播欄位 */
   
   
