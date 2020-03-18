@@ -294,7 +294,7 @@ video {
 
 /* 頁尾 */
 .footer {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background-color: #0b022b;
   height: 100px;
   position: relative;

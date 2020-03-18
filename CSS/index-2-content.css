@@ -7,95 +7,93 @@
     width: 100vw;
     /* display: flex; */
     position: relative;
-  }
-  
-  .content h2 {
+}
+
+.content h2 {
     /* text-align: center; */
     color: #31560e;
     font-size: 30px;
     display: block;
     margin-bottom: 10px;
     margin-left: 20px;
-  }
-  
-  .content p{
+}
+
+.content p {
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 20px;
-  }
-  
-  .content_one,
-  .content_two{
+}
+
+.content_one,
+.content_two {
     background-color: #fff;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
-  }
-  
-  .content_box {
+}
+
+.content_box {
     display: flex;
-    justify-content:center; 
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     /* border: 1px solid red; */
     padding: 10px;
     margin: 0 auto;
-  
-  }
-
-  .content_box_shop{
+}
+.content_box_youtube,
+.content_box_shop {
     display: flex;
-    justify-content:center; 
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     /* border: 1px solid red; */
-  }
-  
-  .content_box_shop ul {
+}
+
+.content_box_youtube,
+.content_box_shop ul {
     display: flex;
-    justify-content:center; 
-    align-items:center;
-  }
-  
-  .content_box_shop ul li{
+    justify-content: center;
+    align-items: center;
+}
+
+.content_box_shop ul li {
     margin-left: 35px;
     margin-right: 35px;
     text-align: center;
-  }
-  
-  .content_box_shop ul li a{
+}
+
+.content_box_shop ul li a {
     text-decoration: none;
-  }
-  
-  .content_box_shop ul li span{
+}
+
+.content_box_youtube,
+.content_box_shop ul li span {
     display: block;
     font-size: 20px;
     text-align: center;
     color: #31560e;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .content_box_shop ul li p{
+}
+.content_box_youtube,
+.content_box_shop ul li p {
     /* margin-top: 5px; */
-  padding-top: 10px;
+    padding-top: 10px;
     color: #31560e;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .content_box_shop img{
+}
+
+.content_box_shop img {
     width: 200px;
     /* height: 150px; */
-  }
-  
-  /* .content_one{
-    position: relative;
-  } */
-  .more{
+}
+
+.more {
     margin-top: 20px;
-    margin-left:42% ;
-  }
-  .more a{
+    margin-left: 42%;
+}
+.more a {
     display: block;
     width: 250px;
     height: 50px;
@@ -107,13 +105,41 @@
     text-decoration: none;
     line-height: 50px;
     color: #31560e;
-  }
-  
-.more a:hover{
-  background-color: #31560e;
-  color: #fff;
 }
 
-  /* 內容-直播欄位 */
+.more a:hover {
+    background-color: #31560e;
+    color: #fff;
+}
+
+/* 內容-直播欄位 */
+.content_box_youtube ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_box_youtube ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* google 地圖 */
+.content_three {
   
-  
+    background-color: #fff;
+    width: 100%;
+padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google_map{
+  display: block;
+}
+
+.addr{
+  text-align: center;
+  width: 700px;
+}
