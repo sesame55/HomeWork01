@@ -108,14 +108,16 @@ font-size: 18px;
 }
 
 .nav_next li:hover{
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 
 .nav_next li ul li {
+  display: block;
   /* float: none; */
   /* background-color: #fff; */
   width: 6vw;
+  height: 30px;
   z-index: 50;
   /* padding: -5px; */
 }
