@@ -55,6 +55,11 @@ box-shadow: 1px 1px 1px black;
   width: 6vw;
 }
 
+.nav ul li :hover{
+  /* text-decoration:underline; */
+  border-bottom: #31560e 3px solid;
+}
+
 .nav ul li a {
   /* background-color: #0b022b; */
   background-color: #fff;
@@ -74,6 +79,8 @@ box-shadow: 1px 1px 1px black;
 
 .nav ul li a:hover {
 font-size: 18px;
+/* text-decoration:underline; */
+
 }
 
 /* 左側選單第2層 */
