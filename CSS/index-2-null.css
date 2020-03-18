@@ -191,7 +191,7 @@
 }
 
 table{
-    border: 1px solid #31560e;
+    border: 1px solid blue;
 }
 table tr{
     border: 1px solid red;
@@ -199,5 +199,5 @@ table tr{
 
 table th,
 table td{
-    border: 1px solid blue;
+    border: 1px solid #31560e;
 }
