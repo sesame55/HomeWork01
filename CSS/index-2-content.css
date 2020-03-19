@@ -25,7 +25,8 @@
 }
 
 .content_one,
-.content_two {
+.content_two,
+.content_four {
     background-color: #fff;
     width: 100%;
     padding-top: 30px;
@@ -130,16 +131,16 @@
     margin-top: 50px;
     background-color: #fff;
     width: 100%;
-padding-top: 10px;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.google_map{
-  display: block;
+.google_map {
+    display: block;
 }
 
-.addr{
-  text-align: center;
-  width: 700px;
+.addr {
+    text-align: center;
+    width: 700px;
 }

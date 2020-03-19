@@ -138,7 +138,7 @@ body {
   /* margin: 3px; */
 }
 
-/* 左側圖案 */
+/* 上方固定選單-左側圖案 */
 .nav_img {
   float: left;
   /* padding-top: 20px;
@@ -147,8 +147,8 @@ body {
   padding-bottom: 10px; */
   width: 50px;
   height: auto;
-  margin-right: 230px;
-  margin-left: 120px;
+  margin-right: 250px;
+  margin-left: 150px;
   /* border: 1px solid green; */
   /* background-color: #0b022b; */
   background-color: #fff;
@@ -171,12 +171,12 @@ margin-left: 150px;
   border-radius: 5px;
 } */
 
-/* 上方列標題 */
+/* 上方固定選單標題 */
 .nav span {
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: 200px;
+  margin-left: 220px;
   margin-top: 12px;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -217,6 +217,19 @@ margin-left: 150px;
   font-weight: bold;
 }
 
+/* 上方欄位文字前方圖示(無法線上引用者) */
+.nav_icon {
+  text-decoration: none;
+  display: inline-block;
+  width: 25px;
+  fill: #31560e;
+}
+
+.nav_icon img{
+  text-decoration: none;
+}
+
+
 /* 購物車 */
 .shopping_car a{
   display: block;
@@ -224,7 +237,7 @@ margin-left: 150px;
   width: 80px;
   text-align: center;
   padding: 3px;
-  margin-right:220px;
+  margin-right:250px;
   margin-top: 12px;
   font-size: 20px;
 }
@@ -263,9 +276,9 @@ video {
 .video_img,
 .video_text {
   /* border: 1px solid yellow; */
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   font-size: 50px;
   color: #fff;
   width: 100%;
@@ -277,7 +290,23 @@ video {
   align-items:center;
 
 }
+
+.video_img{
+   /* border: 1px solid yellow; */
+  position: absolute;
+  top: 37%;
+  /* left: 0; */
+}
+
+.video_text{
+   /* border: 1px solid red; */
+  position: absolute;
+  top: 3%;
+  /* left: 0; */
+}
+
 .video_text p {
+
   text-align: center;
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -287,8 +316,9 @@ video {
 
 .video_img img {
   width: 190px;
+  
   /* display: block; */
-  margin-top: 300px;
+  /* margin-top: 300px; */
   vertical-align: middle;
   /* border: 1px solid green; */
 }
@@ -296,7 +326,7 @@ video {
 /* 向下箭頭 */
 .scroll{
   position: absolute;
-  bottom:150px;
+  top:85%;
   width: 100%;
   display: flex;
   justify-content:center; 

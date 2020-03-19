@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="../HomeWork01/CSS/index-2.css">
     <link rel="stylesheet" href="../HomeWork01/CSS/index-2-content.css">
     <link rel="stylesheet" href="../HomeWork01/CSS/index-2_rwd.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#to').click(function () {
+            $("#from").click(function () {
                 $('html,body').animate({
-                    scrollTop: '900px'
+                    scrollTop: '900%'
                 }, 2000);
             });
         });
@@ -31,15 +31,20 @@
     </div> -->
     <div class="wrap">
         <!-- 上方欄位 -->
-        <div class="content_left" id="cart">
+        <div class="content_left">
             <div class="nav ">
                 <span>Camping Man</span>
-                <a href="../HomeWork01/index.html">
+                <a href="../HomeWork01/index-2.html">
                     <img src="../HomeWork01/img/logo_black.jpg" alt="" class="nav_img">
                 </a>
                 <ul class="nav_next ">
                     <li>
-                        <a href="#">揪 團</a>
+                        <a href="#">
+                            <div class="nav_icon">
+                                <img src="../HomeWork01/img/campground-solid.svg" alt="">
+                            </div>
+                            揪 團
+                        </a>
                         <ul>
                             <li><a href="#">創建揪團</a></li>
                             <li><a href="#">瀏覽活動</a></li>
@@ -48,7 +53,13 @@
                             <li><a href="#">管理揪團</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">商 城</a>
+                    <li><a href="#">
+                            <div class="nav_icon">
+                                <img src="../HomeWork01/img/campground-solid.svg" alt="">
+                            </div>
+                            <!-- <i class="far fa-gem"></i>  -->
+                            商 城
+                        </a>
                         <ul>
                             <li><a href="#">最新消息</a></li>
                             <li><a href="#">熱門商品</a></li>
@@ -57,10 +68,27 @@
                             <li><a href="#">購 物 車</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">日 誌</a></li>
-                    <li><a href="#">直 播</a></li>
+                    <li><a href="#">
+                            <div class="nav_icon">
+                                <img src="../HomeWork01/img/campground-solid.svg" alt="">
+                            </div>
+                            <!-- <i class="far fa-address-book"></i>  -->
+                            日 誌
+                        </a></li>
+                    <li><a href="#">
+                            <div class="nav_icon">
+                                <img src="../HomeWork01/img/campground-solid.svg" alt="">
+                            </div>
+                            直 播
+                        </a></li>
                     <!-- <li><a href="#">行程瀏覽</a></li> -->
-                    <li><a href="#">營區訂位</a>
+                    <li><a href="#">
+                            <div class="nav_icon">
+                                <img src="../HomeWork01/img/campground-solid.svg" alt="">
+                            </div>
+                            <!-- <i class="fas fa-feather"></i> -->
+                            營區訂位
+                        </a>
                         <ul>
                             <li><a href="#">營區推薦</a></li>
                             <li><a href="#">立即訂位</a></li>
@@ -72,7 +100,7 @@
                     <a href="#"><i class="fas fa-shopping-cart "></i></a>
                 </div>
                 <!-- 註冊/登入 -->
-                <div class="sing_in">                    
+                <div class="sing_in">
                     <a href="#"> 登 入 </a>
                     <a href="#"> 註 冊 </a>
                 </div>
@@ -85,11 +113,11 @@
             </video>
             <div class="video_img">
                 <img src="../HomeWork01/img/logo.jpg" alt="">
-            </div>            
-            <div class="video_text">          
+            </div>
+            <div class="video_text">
                 <p>Go Camping And Have FUN !</p>
             </div>
-            <div class="scroll" id="to">
+            <div class="scroll" id="from">
                 <a href="#">
                     <img src="../HomeWork01/img/scroll5.png" alt="">
                 </a>
@@ -145,6 +173,28 @@
                     <a href="#">READ MORE</a>
                 </div>
             </div>
+
+
+            <div class="content_four">
+                <div class="content_box">
+                    <div class="content_box_image">
+                        <div class="content_box_img">
+                            <div class="content_img_in"></div>
+                            <div class="content_img_in"></div>
+                        </div>
+                        <div class="content_box_img">
+                            <div class="content_img_in"></div>
+                            <div class="content_img_in"></div>
+                        </div>
+                        <div class="content_box_img">
+                            <div class="content_img_in"></div>
+                            <div class="content_img_in"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="content_two">
                 <h2>—— RECOMMEND ITEMS</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, beatae.</p>
@@ -208,9 +258,9 @@
         <div class="footer">
             <div class="link_out">
                 <!-- 平台連結:FB, IG ,TWITTER -->
-                <a href="https://www.tent-mark.com/"> <img src="../HomeWork01/img/btn_fb.png" alt=""></a>
+                <a href="https://campmura.com/"> <img src="../HomeWork01/img/btn_fb.png" alt=""></a>
                 <a href="https://www.captainstag.net/"> <img src="../HomeWork01/img/btn_ins.png" alt=""></a>
-                <a href="../HomeWork01/null.html"> <img src="../HomeWork01/img/btn_tw.png" alt=""></a>
+                <a href="../HomeWork01/backend.html"> <img src="../HomeWork01/img/btn_tw.png" alt=""></a>
             </div>
         </div>
     </div>
