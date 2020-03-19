@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>DesPolio Index</title>
+    
+    <link href="https://DA105G3_All/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/DA105G3_All/css/index.css" rel="stylesheet">
+	<link href="/DA105G3_All/css/designer/hoverShowInfo.css" rel="stylesheet"/>
+    <link href="/DA105G3_All/css/designer/swiper.min.css" rel="stylesheet"/>
+	<link href="/DA105G3_All/css/article/hoverCard.css" rel="stylesheet" />
+	<link href="/DA105G3_All/css/designer/designerHover.css" rel="stylesheet" />
+<style>
+	.container{
+		padding-right : 0 !important;
+	}
+
+	.swiper-container {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+		.swiper-container.gallery-top {
+	      height: 400px;
+	    }
+	    .swiper-container.gallery-thumbs {
+	      height: 100px;
+	    }
+	    
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    .gallery-thumbs .swiper-wrapper {
+    	height:100%;
+    }
+    
+	.btnStyle{
+	  	font-size:16px;
+	  	color : #fff;
+	  	background: #937c6f;
+	  	border: 1px solid #937c6f;
+	  	font-weight:900;
+	 }
+		.btnStyle:hover{
+		  	color : #937c6f;
+		  	background-color: #fff;
+		  	border: 1px solid #937c6f;
+		  }  
+		  
+	.imgBoxShow{
+		width:100%;
+		height:100%
+	}  
+	
+	.modal.transModal .modal-content{
+		background-color:transparent;
+		border:transparent
+	}
+		.modal.transModal .modal-content .modal-header{
+			border:0 transparent;
+		}
+		.modal.transModal .modal-content .modal-footer{
+			border:0 transparent;
+		}
+			.modal.transModal .modal-content .swiper-container .swiper-slide{
+				border-color:transparent;
+				border-radius :.5rem
+			}
+			
+	.btnStyleF{
+		position :fixed;
+		width:50px;
+		height:50px;
+	  	font-size:16px;
+	  	color : #fff;
+	  	background: #937c6f;
+	  	border: 1px solid #937c6f;
+	  	font-weight:900;
+	  	tranistion:.5s all;
+	  	overflow:hidden;
+	  	z-index:1051;
+	  	left:10%;
+	 }	
+	 	.btnStyleF:hover{
+		  	color : #937c6f;
+		  	background-color: #fff;
+		  	border: 1px solid #937c6f;
+		}
+		.btnStyleF .hideLeft{
+			margin-left:40px;
+			font-size:24px
+		}
+	 	.btnStyleF > .fas{
+	 		position:absolute;
+	 		top:12px;
+	 		left:12px;
+	 		font-size:24px;
+	 	}
+	 	.btnStyleF.backHome {top:20%;}
+		.btnStyleF.applyDesigner { /*不會重複*/top:30%;}
+		.btnStyleF.addDesPolio { /*不會重複*/top:30%;}
+		.btnStyleF.changeStatusDesPolio {top:40%;}
+		.btnStyleF.deleteDesPolio {top:50%;}
+		.btnStyleF.confirmUpdate {top:60%;}
+		
+	.btnInVisble {
+		display:none;
+	}	
+	.applyDesModal{
+		color:white
+	}
+	.modalSHeader{
+		font-weight:700;
+		font-size:18px;
+		margin-top:.5rem;
+	}
+	
+	input[type="file"].uploadVerifyImg{
+		display:none
+	}
+	
+	.selectorStyle{
+		transition: all .5s;
+		font-size:16px;
+		color:#fff;
+		background-color:#937c6f;
+		border-radius:.25rem;
+		padding:.5rem;
+	}
+		.selectorStyle:hover{
+			color:#937c6f;
+			background-color:#fff;
+		}	
+  </style>
+</head>
+<body>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Decorent</title>
+
+<link href="/DA105G3_All/css/moveText.css" rel="stylesheet"/>
+
+<style type="text/css">
+.navbar-nav .nav-item a{
+	padding:0;
+}
+ .modal .register-img{
+/* 	width: 4.5rem; */
+	height: 3.1rem;
+	
+}
+.header {
+  	background-attachment: inherit;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("/DA105G3_All/images/HeaderBG.jpg"); 
+	padding-bottom: 12vh;
+	padding-top:15vh;
+	box-shadow:0px 7px 11px #937c6f;
+	min-height:100%;
+	min-width:100%
+}
+
+</style>
+
+</head>
+<body>
+	<!----------------------------------NavBar 開始------------------------------------->
+    
+    <!----------------------------------已登入navbar------------------------------------->
+
+<!----------------------------------未登入navbar------------------------------------->
+
+		<nav class="navbar navbar-expand-lg fixed-top pr-5 pl-5 text-right" id="mainNav">
+			<a class="navbar-brand text-center py-2" href="/DA105G3_All/Index.jsp"> <img
+				src="/DA105G3_All/images/LogoLS.png" alt="#"
+				title="Decorent" id="logo">
+			</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span style="font-size:2.1rem;color:white"><i class="fas fa-bars"></i></span>
+ 			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<div class="dropdown">
+							<a href="/DA105G3_All/front-end/product/ProductListAllOK.jsp">
+							<button id="shop_HP" class="btn btnColor" type="button">SHOP</button></a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="dropdown">
+							<a href="/DA105G3_All/front-end/rent/shop.jsp">
+                             <button id="rent_HP" class="btn btnColor" type="button">RENT</button></a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="dropdown">
+							 <a href="/DA105G3_All/front-end/article/RlistAllArticle.jsp">
+                             <button id="article_HP" class="btn btnColor" type="button">BLOG</button></a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="dropdown">
+							 <a href="/DA105G3_All/front-end/designer_portfolio/RlistAllDesPolio.jsp">
+                             <button id="designer_portfolio_HP" class="btn btnColor" type="button">DESIGN</button></a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="dropdown">
+							<a href="/DA105G3_All/front-end/vote/vote_HP.jsp">
+                            <button id="vote_HP" class="btn btnColor" type="button">ACTIVITY</button></a>
+						</div>
+					</li>
+					<li id="member" class="nav-item">
+						<div class="dropdown">	
+                              <a  href="/DA105G3_All/front-end/mem/MemberIndex.jsp">
+                              <button class="btn btnColor needLogin" type="button">MEMBER</button></a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="dropdown">
+								<button type="button" class="btn btnColor2" id="Register"
+								data-toggle="modal" data-target=""  class="registerNav">REGIST</button>
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="dropdown">
+							<button type="button" class="btn btnColor" id="login" data-toggle="modal"
+								data-target="">LOGIN</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	
+
+
+<!---------------------------jumbotron------------------------->
+<div class="jumbotron header text-white">
+  <div class="container">
+       <div class="row">
+           <div class="w-100 text-center mt-30">
+               <h2 class="cd-headline clip">
+                   <span class="blc"> <!--這裡也可以放字--> </span>
+                   <span class="cd-words-wrapper">
+                     <b class="is-visible">　　　　　　　　　　</b> 
+                   </span>
+               </h2>
+           </div>
+       </div>
+    </div>
+</div>
+
+	<!---------------------------登入------------------------->
+	<div class="modal" id="LoginBox" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">
+						<img class="register-img"
+							src="/DA105G3_All/images/Logo.png">
+					</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body modal-text">
+
+					<div class="container register">
+
+
+						<!---------------------------登入的form表單-------------------------------------------->
+						<div class="form-group">
+							<label for="exampleInputEmail1">Account</label> <input
+								name="account" value="" type="text" class="form-control"
+								id="account" aria-describedby="emailHelp" placeholder="Account">
+							<small id="emailHelp" class="form-text text-muted">We'll
+								never share your email with anyone else.
+							</small>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label> <input
+								name="password" value="" type="password" class="form-control"
+								id="password" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<button id="login-submit" type="submit" class="btn btn-block indexBtnColor">Log
+								in</button>
+						</div>
+						<input type="hidden" name="action" value="login">
+					</div>
+				</div>
+				<div class="modal-footer login-bg">
+					<i><small class="text-secondary">Copyright &copy;2020
+							DA105G3 DECORENT</small></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---------------------------註冊------------------------->
+	<div class="modal" id="RegisterBox" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">
+						<img class="register-img"
+							src="/DA105G3_All/images/Logo.png">
+					</h5>
+
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body modal-text">
+					<div class="container register">
+						<div class="row">
+<!-----------------------------------------註冊的form表單---------------------------------------->
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputEmail4">Account</label> <input type="text"
+										class="form-control" id="account_register" placeholder="Account"
+										name="mem_acc" size="45"
+										value="m561247">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputPassword4">Password</label> <input
+										type="password" class="form-control" id="password_register"
+										placeholder="Password" name="mem_pwd" size="45"
+										value="123456">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputEmail5">姓名</label> <input type="text"
+										size="45" class="form-control" id="mem_name"
+										placeholder="Name" name="mem_name" size="45"
+										value="XXX">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputPassword5">電話</label> <input type="text"
+										class="form-control" id="mem_cell"
+										placeholder="PhoneNumber" name="mem_cell" size="45"
+										value="0953966768">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-12">
+									<label for="inputCity">地址</label> <input type="text"
+										class="form-control" id="mem_address" name="mem_address"
+										size="45"
+										value="XX市XX街XX巷XX弄">
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<label for="inputAddress2">Email</label> <input type="email"
+									class="form-control" id="mem_email" placeholder="Email"
+									name="mem_email" size="45"
+									value="m561247@gmail.com">
+							</div>
+							<div class="form-group bir">
+								<label for="inputAddress2">Birthday</label> <input type="text"
+									class="form-control" id="mem_bir" placeholder="Birthday"
+									name="mem_bir" size="45"
+									value="1993-8-15">
+							</div>
+						
+							<fieldset class="form-group col-4">
+								<div class="col-form-label pt-0">性別</div>
+
+								<div class="row ml-5" >
+									<div class="col-6 form-check">
+										<input class="form-check-input mem_sex" type="radio" name="mem_sex"
+											size="45" value="男" >
+										<label class="form-check-label" for="gridRadios1"> 男 </label>
+									</div>
+									<div class="col-6 form-check">
+										<input class="form-check-input mem_sex" type="radio" 
+											 name="mem_sex" size="45" value="女"> 
+										<label class="form-check-label" for="gridRadios2"> 女 </label>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+						<div class="form-group">
+							<div class="form-check"></div>
+							<button id="signin-submit" type="submit" class="btn btn-block indexBtnColor">Sign
+								in</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer login-bg">
+					<i><small class="text-secondary">Copyright &copy;2020
+							DA105G3 DECORENT</small></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!------------------------------------請登入視窗---------------------------------------->
+<div class="modal fade" id="validate" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="padding-left:22px">
+			<img class="register-img" src="/DA105G3_All/images/LogoLS.png">
+		</h5>
+			<button type="button" class="close" style="position:relative" data-dismiss="modal"
+						aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+			</button>
+      </div>
+      <div class="modal-body modal-text text-center">
+          <h5 class="text-secondary">Please Sign in</h5>
+      </div>
+    </div>
+  </div>
+</div>
+	<!------------------------------------移動文字的JS---------------------------------------->
+	<script src="/DA105G3_All/js/jquery-3.3.1.min.js"></script>
+	<script src="/DA105G3_All/js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="/DA105G3_All/js/popper.min.js"></script>
+	<script src="/DA105G3_All/js/bootstrap.min.js"></script>
+    <script src="/DA105G3_All/js/animated.headline.js"></script>
+	<!----------------------------------JavaScript 動畫------------------------------------->
+    <script type="text/javascript">
+    
+    function skipJumbtron(x){
+    	$('html, body').animate({scrollTop: x},400);
+    };
+    
+    function adjustMoveText(ifShow, text) {     
+       var title = $(".cd-words-wrapper").find("b");     
+       if(ifShow == "show") {      
+        	title.parent().show();
+        	title.text(text);         
+       } else if(ifShow == "hide") {         
+         title.parent().hide();
+       }
+    }
+    
+   	$(window).scroll(function() {
+   		if ($("#mainNav").offset().top > 100) {
+   			$("#mainNav").addClass("navbar-scrolled");
+   			$("#mainNav .nav-title").addClass("nav-change");
+   			$(".navbar-nav .nav-item a").addClass("nav-change");
+   			$(".navbar-nav .nav-item .dropdown button").addClass("nav-change");
+   			$("#logo").attr("src", "/DA105G3_All/images/LogoL.png");
+   			$(".navbar-nav .nav-item .dropdown-menu").css({
+   			"background-color" : "rgba(255,255,255,0.8)"});
+   		} else {
+   			$("#mainNav").removeClass("navbar-scrolled");
+   			$("#mainNav .nav-title").removeClass("nav-change");
+   			$(".navbar-nav .nav-item a").removeClass("nav-change");
+   			$(".navbar-nav .nav-item .dropdown button").removeClass("nav-change");
+   			$("#logo").attr("src", "/DA105G3_All/images/LogoLS.png");
+   			$(".navbar-nav .nav-item .dropdown-menu").css({
+   			"background-color" : "transparent"});
+   		}
+   	});
+    	
+
+   	// 上傳照片的名字會秀出來
+   	$(".custom-file-input").on("change", function() {
+   		var fileName = $(this).val().split("\\").pop();
+   		$(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+   	});
+
+   	//--------------------------------------保護頁面驗證---------------------
+   	// 一進頁面就判斷(主要給超連結使用, 前提要有signIn標記)
+   	
+   	
+   	function validate(){
+   		console.log("123");
+   		$.ajax({
+   			type : "POST",
+   			url : "/DA105G3_All/front-end/mem/mem.do",
+   			data : {
+	   			"Content-Type" : "text/html",
+	   			"action" : "validate2"
+   			},success : function(data) {
+   				console.log("here is data" + data);
+   			//跳出請登入視窗用
+   			if(data.trim()==="PleaseSignIn"){
+   				//跳請登入
+   	            $("#validate").modal();
+   				
+   			}
+   			}
+   		});
+   	}
+   	
+   	//跳登入表單
+   	function validateLoginForm(){
+   		$.ajax({
+   			type : "POST",
+   			url : "/DA105G3_All/front-end/mem/mem.do",
+   			data : {
+   			"Content-Type" : "text/html",
+   			"action" : "validate2"
+   			},success : function(data) {
+	   			console.log(data);
+	   			//跳出請登入視窗用
+	   			if(data.trim()==="PleaseSignIn"){
+	   				//跳登入表單
+	   				$("#LoginBox").addClass("fade");
+	   				$("#LoginBox").modal();
+	   			}
+   			}
+   		});
+   	}
+	
+   	
+   	//------------------------------------登入--------------------
+   	//modal加入fade特效
+   	$("#login").click(function() {
+   		$("#LoginBox").addClass("fade");
+   		$("#LoginBox").modal();
+   	});
+   	
+   	// 登入驗證
+   	$("#login-submit").click(submit_login);
+ 
+	//按enter可以送出
+	$("#account").keydown(function(e){
+		console.log(e.keyCode);
+		if(e.keyCode===13){
+			console.log("近來");
+			submit_login();
+		}
+	});
+	$("#password").keydown(function(e){
+		if(e.keyCode===13){
+			submit_login();
+		}
+	});
+   	//送出的function
+   	function submit_login() {
+   		console.log("login按鈕");
+   		$.ajax({
+   			type : "POST",
+   			url : "/DA105G3_All/front-end/mem/mem.do",
+   			data : {
+   			"Content-Type" : "text/html",
+   			"account" : $("#account").val(),
+   			"password" : $("#password").val(),
+   			"action" : "login"
+   			},success : function(data) {
+   			// 回傳的data為servlet提供
+   				var jsonObj = JSON.parse(data);
+   				var location = jsonObj.location;
+   				if (jsonObj.result) {
+   					$("#LoginBox").modal('hide');
+   					if(location!=null){
+   						window.location.reload();
+						window.open(location,"_self");
+					}else {
+						window.location.reload();
+					} 					
+   				}else {
+   					$("#LoginBox").removeClass("fade");
+   					$("#LoginBox").modal();
+   					alert("登入失敗!");
+   					// 關掉的時候有fade特效
+   					$("#LoginBox").addClass("fade");
+   					// 登入失敗要保存資料且秀出錯誤訊息
+   				}
+   			}
+   		});
+   	}
+
+   	// ------------------------------------註冊--------------------
+   	// modal加入fade特效
+   	$("#Register").click(function() {
+   		$("#RegisterBox").addClass("fade");
+   		$("#RegisterBox").modal();
+   		console.log("click function");
+   	});
+   	
+   	// 註冊驗證
+   	$("#signin-submit").click(function() {
+   		$.ajax({
+   			type : "POST",
+   			url : "/DA105G3_All/front-end/mem/mem.do",
+   			data : {
+   			"Content-Type" : "text/html",
+   			"mem_acc" : $("#account_register").val(),
+   			"mem_pwd" : $("#password_register").val(),
+   			"mem_name" : $("#mem_name").val(),
+   			"mem_cell" : $("#mem_cell").val(),
+   			"mem_address" : $("#mem_address").val(),
+   			"mem_email" : $("#mem_email").val(),
+   			"mem_bir" : $("#mem_bir").val(),
+   			"mem_sex" : $('input[name=mem_sex]:checked').val(),
+   			"action" : "register"
+   			},success : function(data) {
+   				// 回傳的data為servlet提供 ex:out.println
+   				console.log(data);
+   				if (data.trim() === "true") {
+   				$("#RegisterBox").modal('hide');
+   				alert("註冊成功!");
+   				// 登入成功後改變nav class，秀出會員資料
+   				// 跳轉頁面，不另外再開視窗
+   				// window.open("/DA105G3_All/Index.jsp","_self")
+   				} else {
+   					$("#RegisterBox").removeClass("fade");
+   					$("#RegisterBox").modal();
+   					$("#RegisterBox").addClass("fade");
+   					alert("註冊失敗!");
+   				// 登入失敗要保存資料且秀出錯誤訊息
+   				} 
+   			}
+   		});
+   	});
+   	
+   	// JS 日期工具, 方便
+   	Date.prototype.Format = function (fmt) { //author: meizz 
+   	    var o = {
+   	        "M+": this.getMonth() + 1, //月份 
+   	        "d+": this.getDate(), //日 
+   	        "h+": this.getHours(), //小时 
+   	        "m+": this.getMinutes(), //分 
+   	        "s+": this.getSeconds(), //秒 
+   	        "q+": Math.floor((this.getMonth() + 3) / 3),  ////季度 
+   	        "S": this.getMilliseconds() //毫秒 
+   	    };
+   	    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+   	    for (var k in o)
+   	    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+   	    return fmt;
+   	}
+
+    </script>
+   
+</body>
+
+</html>
+<div class="container mt-2 mb-5" style="min-height:80vh">
+<!-- 	<div class="row" style="height:2vh"></div> -->
+	<div class="row text-center justify-content-center mt-4">
+	  <div class="col-12">
+	    <div id="demo-2">
+	      <input class="mb-2 searchBar" type="search" style="width:80%" placeholder="Find your style">
+	    </div>
+	 </div>
+	 <hr width=80%>
+	</div>
+	<div class="row">
+		
+		    <!-- only show when despolio status is 1 -->
+		    
+		    
+			<div class="col-4 desPolioArea"  des_polio_no="DP000001" >
+				<!-- only show when your polio -->
+			  	
+				<div class="tile" data-toggle="lightbox"  style="">
+				  <div class="panelleft" data-toggle="lightbox">
+				    <h3 class="polio_title">素面平靜</h3>
+				    <p class="text-left pl-3" style="color:#fff">
+				    	author:　<span class="polio_author">陳時中</span>
+				       	Style : 　<span class="polio_style">簡約風</span> 
+				       	Seen : 　<span class="polio_seen">1</span>
+				    </p>
+				    <p class="showDesStatusText"><b>See more....</b></p>
+				    <input class="des_polio_content" type="hidden" value="原境國際室內設計勾勒美的樂章，將「現代」與「美式」的設計語彙在此交融，透過悉心的舖述下，建構出獨一無二的時尚感與自然率性，並依照一家四口的需求與喜好，成功劃分各成員的私人場域，成為既獨立又能增添情感的幸福空間。
+由玄關轉進公共區域，客、餐廳與書房相互連結，串聯為一處開放空間，讓動線通透無礙，並佐以美式風格的元素，搭配獨具現代感的家具及燈飾，呈現出時尚與雅緻兼具的居家氛圍。整體用色與機能規劃上，設計師邱郁雯採用低調沉穩的配色，來形塑出新時代的空間美感；並利用造型俐落的櫃面，作為收納機能的形式，鋪述出簡約調性與細膩質感。">
+				    <input class="des_polio_no" type="hidden" value="DP000001">
+				    <input class="designer_no" type="hidden" value="MM000001">
+				    <input class="picNums" type="hidden" value="26">
+				  </div>
+				  <img class="imagefront imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000001&index=0&shrink=400" />
+				  <img class="imagebehind imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000001&index=1&shrink=400" />
+				</div>
+			</div>
+			
+		
+		    <!-- only show when despolio status is 1 -->
+		    
+		    
+			<div class="col-4 desPolioArea"  des_polio_no="DP000002" >
+				<!-- only show when your polio -->
+			  	
+				<div class="tile" data-toggle="lightbox"  style="">
+				  <div class="panelleft" data-toggle="lightbox">
+				    <h3 class="polio_title">淡水－詩意人生</h3>
+				    <p class="text-left pl-3" style="color:#fff">
+				    	author:　<span class="polio_author">陳時中</span>
+				       	Style : 　<span class="polio_style">奢華風</span> 
+				       	Seen : 　<span class="polio_seen">0</span>
+				    </p>
+				    <p class="showDesStatusText"><b>See more....</b></p>
+				    <input class="des_polio_content" type="hidden" value="居住成員：	大人×1
+裝潢費用：	401萬～500萬（不含空調、廚具、衛浴）
+房屋坪數：	30 坪（室內）
+設計風格：	現代風格
+房屋類型：	小坪數
+房屋狀況：	老屋翻新
+圖片提供：	原境國際室內設計
+空間格局：	1房、2廳、2衛、書房、視聽室
+主要建材：	KD塗裝版、實木地板、薄板、鐵件">
+				    <input class="des_polio_no" type="hidden" value="DP000002">
+				    <input class="designer_no" type="hidden" value="MM000001">
+				    <input class="picNums" type="hidden" value="5">
+				  </div>
+				  <img class="imagefront imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000002&index=0&shrink=400" />
+				  <img class="imagebehind imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000002&index=1&shrink=400" />
+				</div>
+			</div>
+			
+		
+		    <!-- only show when despolio status is 1 -->
+		    
+		    
+			<div class="col-4 desPolioArea"  des_polio_no="DP000003" >
+				<!-- only show when your polio -->
+			  	
+				<div class="tile" data-toggle="lightbox"  style="">
+				  <div class="panelleft" data-toggle="lightbox">
+				    <h3 class="polio_title">世外桃源 山林間的質感秘境</h3>
+				    <p class="text-left pl-3" style="color:#fff">
+				    	author:　<span class="polio_author">陳時中</span>
+				       	Style : 　<span class="polio_style">現代風</span> 
+				       	Seen : 　<span class="polio_seen">0</span>
+				    </p>
+				    <p class="showDesStatusText"><b>See more....</b></p>
+				    <input class="des_polio_content" type="hidden" value="本案設計為雙主臥配置，因應屋主需求將公、私領域巧妙區隔，加強居家隱私防護，並替客廳、餐廳及廚房場域完美串聯，延展空間尺度表現宏偉之貌。結合既有的山林綠意與潺潺河水，規劃落地窗將景色與日光引入室內，使空間更為通透明朗。
+    為突顯空間大器沉著氛圍，原境設計於玄關、電視主牆及走道地坪均採石材鋪陳，希望透過天然建材演繹恢弘氣韻，也順勢呼應窗外的自然景色。而為了平衡空間暖調性，設計師邱郁雯特別於沙發區及用餐空間安排木質地板，勾勒居家溫馨氛圍，成功點明場域視覺層次，打造舒適宜居的世外桃源。">
+				    <input class="des_polio_no" type="hidden" value="DP000003">
+				    <input class="designer_no" type="hidden" value="MM000001">
+				    <input class="picNums" type="hidden" value="12">
+				  </div>
+				  <img class="imagefront imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000003&index=0&shrink=400" />
+				  <img class="imagebehind imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000003&index=1&shrink=400" />
+				</div>
+			</div>
+			
+		
+		    <!-- only show when despolio status is 1 -->
+		    
+		    
+			<div class="col-4 desPolioArea"  des_polio_no="DP000004" >
+				<!-- only show when your polio -->
+			  	
+				<div class="tile" data-toggle="lightbox"  style="">
+				  <div class="panelleft" data-toggle="lightbox">
+				    <h3 class="polio_title">簡約低調-輕奢華</h3>
+				    <p class="text-left pl-3" style="color:#fff">
+				    	author:　<span class="polio_author">派大星</span>
+				       	Style : 　<span class="polio_style">古典風</span> 
+				       	Seen : 　<span class="polio_seen">1</span>
+				    </p>
+				    <p class="showDesStatusText"><b>See more....</b></p>
+				    <input class="des_polio_content" type="hidden" value="居住成員：	大人×2、小孩×1
+裝潢費用：	500萬以上（不含家具、窗簾）
+房屋坪數：	50 坪（室內）
+設計風格：	現代風格
+房屋類型：	標準格局
+房屋狀況：	毛胚屋
+圖片提供：	原境國際室內設計
+空間格局：	2房、2廳、3衛
+主要建材：	鍍鈦枝、實皮、實木皮染色">
+				    <input class="des_polio_no" type="hidden" value="DP000004">
+				    <input class="designer_no" type="hidden" value="MM000002">
+				    <input class="picNums" type="hidden" value="11">
+				  </div>
+				  <img class="imagefront imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000004&index=0&shrink=400" />
+				  <img class="imagebehind imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000004&index=1&shrink=400" />
+				</div>
+			</div>
+			
+		
+		    <!-- only show when despolio status is 1 -->
+		    
+		    
+			<div class="col-4 desPolioArea"  des_polio_no="DP000005" >
+				<!-- only show when your polio -->
+			  	
+				<div class="tile" data-toggle="lightbox"  style="">
+				  <div class="panelleft" data-toggle="lightbox">
+				    <h3 class="polio_title">藏風聚氣 藝術交織人文的殿堂</h3>
+				    <p class="text-left pl-3" style="color:#fff">
+				    	author:　<span class="polio_author">派大星</span>
+				       	Style : 　<span class="polio_style">古典風</span> 
+				       	Seen : 　<span class="polio_seen">0</span>
+				    </p>
+				    <p class="showDesStatusText"><b>See more....</b></p>
+				    <input class="des_polio_content" type="hidden" value="本案以招待所概念呈現奢華氣度，設計師邱郁雯並嚴選大理石、木皮、烤漆、裱布、皮革與鐵件等異質材混搭，以深厚基礎的美學涵養，帶入完美的線條比例，在簡約且明快的框架中勾勒當代語彙，形塑兼顧大器與雅致於一身的空間質感。
+	 原境國際室內設計在500坪的場域內，將設計及藝術之美融入在空間中，讓賓客一步一景、環顧所及都是美的詩篇。當然，除了主題氛圍的營造之外，維持一脈開敞的視界尺度，藉由場域機能的細膩分區，鋪展循序漸進的視覺景深，也成就極致品味的傳世經典。">
+				    <input class="des_polio_no" type="hidden" value="DP000005">
+				    <input class="designer_no" type="hidden" value="MM000002">
+				    <input class="picNums" type="hidden" value="8">
+				  </div>
+				  <img class="imagefront imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000005&index=0&shrink=400" />
+				  <img class="imagebehind imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000005&index=1&shrink=400" />
+				</div>
+			</div>
+			
+		
+		    <!-- only show when despolio status is 1 -->
+		    
+		    
+			<div class="col-4 desPolioArea"  des_polio_no="DP000006" >
+				<!-- only show when your polio -->
+			  	
+				<div class="tile" data-toggle="lightbox"  style="">
+				  <div class="panelleft" data-toggle="lightbox">
+				    <h3 class="polio_title">美好境界</h3>
+				    <p class="text-left pl-3" style="color:#fff">
+				    	author:　<span class="polio_author">珊迪</span>
+				       	Style : 　<span class="polio_style">奢華風</span> 
+				       	Seen : 　<span class="polio_seen">0</span>
+				    </p>
+				    <p class="showDesStatusText"><b>See more....</b></p>
+				    <input class="des_polio_content" type="hidden" value="居住成員：	大人×2、小孩×2、傭人
+房屋坪數：	222 坪（室內）
+設計風格：	現代風格
+房屋類型：	別墅
+房屋狀況：	自地自建
+圖片提供：	原境國際室內設計
+空間格局：	6房、4廳、9衛、遊戲室、傭人房、酒窖
+主要建材：	實皮、御影石、石木皮染色">
+				    <input class="des_polio_no" type="hidden" value="DP000006">
+				    <input class="designer_no" type="hidden" value="MM000003">
+				    <input class="picNums" type="hidden" value="10">
+				  </div>
+				  <img class="imagefront imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000006&index=0&shrink=400" />
+				  <img class="imagebehind imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000006&index=1&shrink=400" />
+				</div>
+			</div>
+			
+		
+		    <!-- only show when despolio status is 1 -->
+		    
+		    
+			<div class="col-4 desPolioArea"  des_polio_no="DP000007" >
+				<!-- only show when your polio -->
+			  	
+				<div class="tile" data-toggle="lightbox"  style="">
+				  <div class="panelleft" data-toggle="lightbox">
+				    <h3 class="polio_title">現代慢活美學</h3>
+				    <p class="text-left pl-3" style="color:#fff">
+				    	author:　<span class="polio_author">珊迪</span>
+				       	Style : 　<span class="polio_style">現代風</span> 
+				       	Seen : 　<span class="polio_seen">0</span>
+				    </p>
+				    <p class="showDesStatusText"><b>See more....</b></p>
+				    <input class="des_polio_content" type="hidden" value="居住成員：	大人×2、小孩×1
+裝潢費用：	501萬以上
+房屋坪數：	50 坪（室內）
+設計風格：	現代風格
+房屋類型：	標準格局
+房屋狀況：	毛胚屋
+圖片提供：	原境國際室內設計
+空間格局：	2房、2廳、2衛
+主要建材：	石材薄板、實木皮染色、鐵件">
+				    <input class="des_polio_no" type="hidden" value="DP000007">
+				    <input class="designer_no" type="hidden" value="MM000003">
+				    <input class="picNums" type="hidden" value="8">
+				  </div>
+				  <img class="imagefront imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000007&index=0&shrink=400" />
+				  <img class="imagebehind imgBoxShow" src="/DA105G3_All/myUtil/PictureReader?des_polio_no=DP000007&index=1&shrink=400" />
+				</div>
+			</div>
+			
+		
+	</div>
+	<!-- row end -->
+	
+	<!-- Modal for show One DesPolio -->
+	<div class="modal fade bd-example-modal-lg transModal picWindow" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-xl modal-dialog-centered">
+		  <div class="modal-content">
+	    	<div class="modal-header" style="color:#fff;padding-bottom:0">
+		        <h3 class="modal-title text-center polio_title"></h3>
+		        <p style="padding:15px;margin:0">
+				        　　Author : 　<span class="polio_author"></span> 
+				        　　Style : 　<span class="polio_style"></span> 
+				       　	Seen : 　<span class="polio_seen"></span>
+				</p>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#fff">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="polio_content text-left" style="font-size:12px;color:#fff"></div>
+	     	 <!-- Swiper main -->
+			  <div class="swiper-container gallery-top">
+			    <div class="swiper-wrapper"></div>  <!--  add Picture here -->
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next swiper-button-white"></div>
+			    <div class="swiper-button-prev swiper-button-white"></div>
+			  </div>
+			  <div class="swiper-container mt-3 gallery-thumbs">
+			    <div class="swiper-wrapper"></div>  <!--  add Picture here -->
+			  </div>
+			  
+			  <!-- show designer button -->
+			  <div class="modal-footer text-center">
+		        	<button class="showDesignerInfo btnStyle w-100 form-control" type="submit" value="">SHOW Designer Info</button>
+		      </div>
+						  
+	   	  </div>
+	   </div>
+	  </div>
+	  <!-- Modal for show One DesPolio end -->
+	
+	<!-- Apply Modal Done -->
+	<div class="modal fade transModal applyDesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+	    <div class="modal-content">
+     	  <div class="modal-header text-center" style="color:#fff;padding-bottom:0">
+	         <h3 class="modal-title text-center polio_title"><b>申請設計師</b></h3>
+	      </div>
+		  <hr style="width:100%;border-top:2px solid #fff">
+	      <div class="applyContent text-left">
+			  <form METHOD="post" ACTION="/DA105G3_All/designer/designer.do" name="addDesPolioForm" enctype="multipart/form-data">
+				  <div class="form-group container-fluid">
+				  	<div class="row modalSHeader mb-2">
+				  		<div class="col-12">-申請人姓名-</div>
+				  		<div class="col-12" style="font-weight:400"></div>
+				  	</div>
+				    <div class="row modalSHeader" for="designer_info">
+				    	<div class="col-12">-自我介紹-</div>
+				    	<div class="col-12">
+				    		<small class="form-text">我們會依據您提供的資料作評估, <font style="color:yellow"><b>請詳細填寫</b></font></small>
+				    	</div>
+				    </div>
+				    <div class="row">
+				    	<textArea class="form-control" name="designer_info" id="designer_info" required></textArea>
+				   	</div>
+				    <div class="row modalSHeader mt-2 content-align-between">
+				    	<div class="col-4">-相關證照-<small class="form-text">請上傳相關佐證資料</small></div>
+				    	<div class="col-8 w-100 text-right">
+				    		<label for="designer_verify_info" class="btnStyle" style="margin-left:19rem;padding:.5rem;border-radius:.2rem" >Upload</label>
+				    		<input class="uploadVerifyImg" type="file" id="designer_verify_info" name="designer_verify_info"  required>
+				    	</div>
+				    	<div class="col-12 text-center">
+							<img class="w-100 showVerifyImg" style="height:200px;border-radius:.25rem;border:2px solid #fff">
+						</div>	
+				    </div>
+				   </div>
+				 <input type="hidden" name="action" value="insert">
+	             <input type="submit" value="Apply" class="btn btnStyle w-100">
+            </form>
+		 </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Apply Modal end -->	
+	
+	
+	<!-- Add DesPolio Modal -->
+	<div class="modal fade transModal transModal addDesPolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+	    <div class="modal-content">
+     	  <div class="modal-header text-center" style="color:#fff;padding-bottom:0">
+	         <h3 class="modal-title text-center polio_title"><b>新增專欄作品 : </b></h3>
+	      </div>
+		  <hr style="width:100%;border-top:2px solid #fff">
+	      <div class="addDesContent text-left" style="color:#fff">
+	      	<form METHOD="post" ACTION="/DA105G3_All/designer_portfolio/designer_portfolio.do" name="addDesPolioForm" enctype="multipart/form-data">
+
+			  <div class="form-group container-fluid">
+			  	<div class="row mb-2">
+			  		<div class="col-12 modalSHeader">-設計師姓名-</div>
+			  		<div class="col-12" style="font-weight:400"></div>
+			  		<div class="col-12 modalSHeader">-作品名稱-</div>
+			  		<div class="col-12">
+					  	<h3><input class="w-100 des_polio_title" type="TEXT" name="des_polio_title" value='' size="30" maxlength=10 required></h3>
+					</div>
+					<div class="col-9 modalSHeader mb-2">-作品內容-</div>
+					<div class="col-3 mb-2">
+						<select size="1" name="des_polio_style" class="selectorStyle des_polio_style" required value=''>
+							<option disabled selected>Choose
+							
+								<option value="0">簡約風
+							
+								<option value="1">現代風
+							
+								<option value="2">奢華風
+							
+								<option value="3">古典風
+							
+						</select>
+<!-- 						<select size="1" name="des_polio_status" class="selectorStyle" required > -->
+
+
+
+<!-- 						</select> -->
+						<button class="btnStyle btn magic_btn" type="button" style="padding: .4rem;margin-bottom: .1rem;margin-left:.5rem">神奇小按鈕</button>
+					</div>
+			  		<div class="col-12 w-100">
+					  	<textArea name="des_polio_content" id="des_polio_content" required></textArea>
+					</div>
+					
+					<div class="col-2 modalSHeader mt-2 ">-作品照片-</div>
+					<div class="col-1 mt-2">
+						<input id="des_polio_pic" class="des_polio_pic" type="file" name="des_polio_pics" multiple required>
+					</div>
+					<div class="col-12"><div class="imgDesPolioBox"></div></div>
+					
+				</div>
+				<input type="hidden" name="action" value="insert">
+	            <button class="btn btnStyle w-100">Add New Portfolio</button>
+	          </div>
+			</form>
+		  </div>
+	     </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Add DesPolio Modal end -->
+	
+	<!-- Designer Info Modal -->
+	<div class="modal fade transModal showDesignerModal" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+	    <div class="modal-content p-2">
+	      <div class="modal-body">
+	        <div id="team" class="container-fluid my-3 py-5 text-center">
+			<div class="row"><div class="col-12 mb-2"> <div class="card">
+               <div class="card-body container-fluid">
+               	   <div class="row">
+               	   	<div class="col-3 row desingerCol">
+               	   		<div class="col-12" >
+               	   			<div class="designerImgBack" >
+	               	   			<img class="designerImg imgHeader img-fluid" width="100px">
+	                	   		<h3 class="designerName"></h3>
+	                	   		<small class="designerType">DECORENT Designer</small>
+               	   			</div>
+<!--                	   			<img class="designerImg imgHeader img-fluid" width="100px"> -->
+<!--                	   			<h3 class="designerName"></h3> -->
+               	   			<h5 class="mt-3"><b>相關作品集</b></h5>
+               	   			<hr style="color: white; border-top: 1px #afa6a6 solid;">
+               	   			<div class="col-12 desPolioNos"></div>
+               	   		</div>
+               	   	</div>
+               	   	<div class="col-9 text-left desingerInfoBox"><p class="designerInfo"></p></div>
+               	   </div>
+               </div></div></div></div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Designer Info Modal -->
+		
+	<!-- fix button  area -->	
+	<a class="btn btnStyleF backHome" href="/DA105G3_All/front-end/designer_portfolio/RlistAllDesPolio.jsp">
+	<i class="fas fa-home"></i></a>
+	
+	<!-- Apply Designer -->
+	
+	<!-- show when designer -->
+	
+		
+	</div>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/DA105G3_All/css/core-style.css">
+<style>
+#footer ul li{
+	display:inline;
+	
+}
+
+#footer ul li a{
+	color:#fff;
+	margin-left:1rem;
+}
+</style>
+</head>
+<body>
+
+<!-- background-image: linear-gradient(to right bottom, #937c6f, #a99689, #c0b0a4, #d7cbc1, #efe6de); -->
+<!-----------------Footer開始----------------------------->
+<!-- <footer class="footer_area clearfix"  style=" background-color: #34ADFF; -->
+<!-- /*   background-image: -webkit-linear-gradient(30deg, #34ADFF 45%, #4CBFFF 45%); */ -->
+<!--   min-height: 400px;"> -->
+  
+  <footer class="footer_area clearfix"  style="background-image: linear-gradient(to right bottom, #c79081, #dfa579);">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+				 <div style="text-align: center;" id="footer">
+	    			<ul>
+                        <li><a href="#">關於DECORENT</a></li>
+                        <li><a href="#">加入DECORENT</a></li>
+                        <li><a href="#">各項服務</a></li>
+                        <li><a href="#">常見問題</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                    </ul>				
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12 text-center">
+                <p style="color:#fff">COPYRIGHT &copy;2020 DA105G3 DECORENT</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-----------------Footer結束----------------------------->
+</body>
+</html>
+
+<script type="text/javascript">
+	var data2 = null;
+	$(document).ready(function(){
+		
+		
+	    	
+		CKEDITOR.replace('designer_info',{width:"100%",height:"400px"});
+		CKEDITOR.replace('des_polio_content',{width:"100%",height:"400px"});
+		
+		// 起始位置直接到
+		skipJumbtron(0);
+		adjustMoveText("show","FEEL VIBE, GET COZY"); 
+		
+	    $(".picWindow").on('show.bs.modal', function() {
+	        setTimeout(function() {
+	        	var galleryThumbs = new Swiper('.gallery-thumbs', {
+	        		grabCursor: true,
+	        		observer: true,
+	        	    spaceBetween: 10,
+	        	    slidesPerView: 8,
+	        	    loop: true,
+	        	    freeMode: true,
+	        	    loopedSlides: 4, //looped slides should be the same
+	        	    watchSlidesVisibility: true,
+	        	    watchSlidesProgress: true,
+	        	});
+	        	  
+	        	var galleryTop = new Swiper('.gallery-top', {
+	        		grabCursor: true,
+	        		observer: true,
+	        	    spaceBetween: 10,
+	        	    loop:true,
+	        	    loopedSlides: 8, //looped slides should be the same
+	        	    navigation: {
+	        	      nextEl: '.swiper-button-next',
+	        	      prevEl: '.swiper-button-prev',
+	        	    },
+	        	    thumbs: {
+	        	      swiper: galleryThumbs,
+	        	    },
+	        	});
+	        }, 500);
+	    });
+	  
+	 // 找出專欄做品
+	 $(".desPolioArea").click(function(){
+		 var title = $(this).find(".polio_title").text().trim();
+		 var author = $(this).find(".polio_author").text().trim();
+		 var style = $(this).find(".polio_style").text().trim();
+		 var seen = $(this).find(".polio_seen").text().trim();
+		 var picNums = $(this).find(".picNums").val().trim();
+		 var des_polio_no = $(this).find(".des_polio_no").val();
+		 var des_polio_content = $(this).find(".des_polio_content").val();
+		 var designer_no = $(this).find(".designer_no").val();
+		 var picModal = $(".picWindow");
+		 picModal.find(".polio_title").text(title);
+		 picModal.find(".polio_author").text(author);
+		 picModal.find(".polio_style").text(style);
+		 picModal.find(".polio_seen").text(seen);
+		 picModal.find(".polio_content").html(des_polio_content);
+		 
+		 if(designer_no!=""){
+			picModal.find(".showDesignerInfo").show();
+			picModal.find(".showDesignerInfo").val(designer_no);
+		 }else{
+			picModal.find(".showDesignerInfo").hide();
+		 }
+				 
+		 var topPart = picModal.find(".swiper-container.gallery-top .swiper-wrapper").empty(); // 全部抓到
+		 var botPart = picModal.find(".swiper-container.gallery-thumbs .swiper-wrapper").empty();
+		 
+		 var div = null;
+		 var url = "url(/DA105G3_All/myUtil/PictureReader?des_polio_no=" + des_polio_no + "&index=";
+		 for(let i=0;i<picNums;i++){
+			 div = $("<div class='swiper-slide'>").css("background-image", url+i+")");
+			 div2 = $("<div class='swiper-slide'>").css("background-image", url+i+"&shrink=200)"); // 壓縮
+// 		 	 console.log(div);
+		 	 topPart.append(div);
+			 botPart.append(div2);
+		 }
+		 
+		 picModal.modal();
+		 $(".addDesPolio").css("display","none"); // 只有在首頁面才顯示
+		 $(this).find(".btnInVisble").show();
+	 });
+	 
+	 
+	 // picWindow隱藏
+	 $(".picWindow").on("hide.bs.modal",function(){
+		 console.log("hide modal");
+		 $(".btnInVisble").hide();
+		 $(".addDesPolio").show();
+	 });
+	 
+	 // 滑到swiper 上有框線     抓不到!!!!
+// 	 $(".swiper-container .swiper-wrapper .swiper-slide").click(function(){
+// 		$(this).css({"border":"2px solid white","transition":".5s all"}) 
+// 	 });
+
+	 // 按鈕滑動效果
+	 $(".btnMove").hover(function(e){
+// 		 e.preventDefault();
+// 		 var span = $(this).find(".fas").next();
+		 $(this).animate({"width":"200px","height":"49px"},200);
+	 },function(e){
+		 $(this).animate({"width":"50px","height":"49px"},200);
+	 })
+	 
+	 $(".applyDesigner").click(function(){
+		$(".applyDesModal").modal(); 
+	 });
+	 
+	 $(".uploadVerifyImg").change(function(e){
+		var url = URL.createObjectURL(e.target.files[0]);
+		$(".showVerifyImg").attr("src",url).css("height","100%");
+	 });
+	 
+	 // 找出設計師
+	 $(".showDesignerInfo").click(function(){
+		 var designerModal = $(".showDesignerModal");
+		 $(".picWindow").modal('hide').on("hidden.bs.modal",function(){
+			 $.ajax({
+				url:"/DA105G3_All/designer/designer.do",
+				type:"POST",
+				dataType:"json",
+				data: {
+					 "action":"getOne_For_Display_Ajax",
+				 	 "designer_no" : $(".showDesignerInfo").val()
+				},
+				success: function(data){
+					console.log(data);
+					data2 = data;
+					if(data.errorMsgs==null){
+						console.log(data);
+						var url = "/DA105G3_All/myUtil/PictureReader?mem_no=";
+						var url2 = "/DA105G3_All/myUtil/PictureReader?des_polio_no=";
+						console.log(url+data.designer_no);
+						designerModal.find(".designerImg").attr("src",url+data.designer_no);
+						designerModal.find(".designerName").text(data.desinger_name);
+						designerModal.find(".designerInfo").html(data.designer_info);
+						designerModal.find(".desPolioNos").empty();
+						var col = null ;
+						var count = data.desPolioNos.length;
+						if(count>=3){count=3;}  // 只有三個推薦最品
+						
+						for(var i=0;i<count;i++){                                         // .css("height","250px") 拿掉
+							col = $("<div class='desPolioArea2'>").append($("<img>").attr("src",url2+data.desPolioNos[i]+"&index=0").css("width","100%"))
+																  .append($("<div class='mb-1'>").css({"font-size":16}).text(data.desPolioNames[i]));
+							designerModal.find(".desPolioNos").append(col);							
+						} 
+					}
+				}
+			});
+			$(".picWindow").off("hidden.bs.modal");
+			designerModal.modal();
+		 });
+	 });
+	 
+	 $(".addDesPolio").click(function(){
+		$(".addDesPolioModal").modal(); 
+	 });
+	 
+	 $(".addDesPolioModal #des_polio_pic").change(function(e){
+		console.log("Here");
+		var url = null;
+		var length = e.target.files.length;
+		var imgBox = $(this).parent().next().find(".imgDesPolioBox").empty();
+		var img = null;
+		for(let i=0;i<length;i++){
+			url = URL.createObjectURL(e.target.files[i]);
+			img = $("<img class='m-2'>").attr("src",url).css("width","100px");
+			imgBox.append(img);
+		}
+	});	
+	 
+	 
+	const Toast = Swal.mixin({
+	  toast: true,
+	  position: 'bottom-end',
+	  showConfirmButton: false,
+	  timer: 2000
+	});
+	
+	// 變更狀態
+	 $(".changeStatusDesPolio").click(function(e){
+		 var self = $(this);
+		 var self_parent = self.parent();
+		 var self_showDesText = self_parent.find(".showDesStatusText");
+		 var self_tile = self_parent.find(".tile");
+		 var current_Status = parseInt(self.attr("status"));
+		 console.log("current_Status " + current_Status);
+		 var status = (current_Status+1)%2; //變更的狀態
+		 console.log("status " + status);
+    	 $.ajax({
+  	 		url:"/DA105G3_All/designer_portfolio/designer_portfolio.do",
+  	 		type:"POST",
+  	 		data:{
+  	 			des_polio_no : self_parent.attr("des_polio_no"),
+  	 			action : "changeStatus",
+  	 			des_polio_status : status
+  	 		},
+  	 		success : function(data){
+  	 			console.log(data);
+  	 			if(data=="true"){
+  	 				if(status==1){
+  	 					Toast.fire({
+  	  	  				  icon: 'success',
+  	  	  				  title: '作品已上架'
+  	  	  				});
+  	 					self_tile.css("opacity",1); 
+  	 					self.find(".fas").addClass("fa-eye-slash").removeClass("fa-eye");
+  	 					self.find(".hideLeft").text("HIDE");
+  	 					self_showDesText.html("<b>See more....</b>");
+  	 					
+  	 				}else if(status==0){
+  	 					Toast.fire({
+   	  	  				  icon: 'warning',
+   	  	  				  title: '作品已下架'
+   	  	  				});
+  	 					self_tile.css("opacity",0.6);
+  	 					self.find(".fas").removeClass("fa-eye-slash").addClass("fa-eye");
+  	 					self.find(".hideLeft").text("SHOW");
+  	 					self_showDesText.html("<b style='color:white;font-size:25px'>已下架</b>");
+  	 				}
+  	 				self.attr("status",status);
+  	 			}else{
+  	 				Toast.fire({
+  	  				  icon: 'error',
+  	  				  title: '更改失敗, 請洽管理人員',
+  	  				});
+  	 			}
+  	 		}
+  	 	});
+	 });
+	
+	$(".deleteDesPolio").click(function(){
+		var self_parent = $(this);
+		console.log("here in delete");
+		Swal.fire({
+			  title: '你確定要刪除該作品集嗎?',
+			  text: "該作品集會永久刪除",
+			  icon: 'warning',
+			  confirmButtonColor: '#937c6f',
+			  cancelButtonColor: '#d33',
+			  confirmButtonText: '確定刪除'
+		}).then((result) => {
+			  console.log("result " + result.value);
+			  if (result.value) {
+				 var self_parent = $(this).parent();
+				 var des_polio_no = self_parent.attr("des_polio_no");
+				 console.log("des_polio_no " + des_polio_no);
+				 $.ajax({
+					url:"/DA105G3_All/designer_portfolio/designer_portfolio.do",
+		  	 		type:"POST",
+		  	 		data:{
+		  	 			des_polio_no : des_polio_no,
+		  	 			action : "delete_For_Ajax",
+		  	 		},
+		  	 		success : function(data){
+		  	 			console.log(data);
+		  	 			if(data=="true"){
+		  	 				Swal.fire({
+		  	 				  icon: 'success',
+		  	 				  title: '文章已刪除',
+		  	 				}).then(function(){
+		  	 					self_parent.remove();
+		  	 					$(".picWindow").modal('hide');
+		  	 				});
+		  	 		    }
+		  	 		}
+				 });
+			  }
+		});
+	});
+	
+	// 神奇小按鈕
+	$(".btnStyle.btn.magic_btn").click(function(){
+		console.log("in to Here");
+		$(".des_polio_title").val("負壓隔離病房設計");
+		$(".des_polio_style option").removeAttr("selected");
+	});
+});	
+	
+	
+	 </script>
+<script src="/DA105G3_All/js/awesomeFont.js"></script>
+<script src="/DA105G3_All/js/designer/swiper.min.js"></script>
+<script src="/DA105G3_All/js/article/ckeditor/ckeditor.js"></script>
+<script src="/DA105G3_All/js/article/sweetalert2@9.js"></script>
+ 
+</body>
+</html>F
