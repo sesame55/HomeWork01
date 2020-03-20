@@ -190,7 +190,7 @@ position: relative;
 .content_img_in_two{
     /* margin-top: -50px;
     margin-right: 50px; */
-    margin-right: 50px;
+    margin-right: 100px;
     float: right;
     /* background-color:#fff; */
 }
@@ -229,7 +229,7 @@ position: relative;
 .content_img_in p{
     position: absolute;
     top: 55%;
-    left: 450px;
+    left: 400px;
     padding: 5px;
     clip-path: polygon(5% 4%, 99% 16%, 94% 94%, 10% 100%);
 
