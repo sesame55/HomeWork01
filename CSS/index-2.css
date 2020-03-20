@@ -57,7 +57,7 @@ body {
 
 .nav ul li :hover {
   /* text-decoration:underline; */
-  border-bottom: #31560e 3px solid;
+  /* border-bottom: #31560e 3px solid; */
 }
 
 .nav ul li a {
