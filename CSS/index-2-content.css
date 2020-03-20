@@ -146,6 +146,10 @@
 }
 
 /* 圖片-content4 */
+.content_four{
+ background-color: rgba(255, 255, 255, 0);
+}
+
 .content_box_image{
     display: flex;
     justify-content: center;
@@ -208,7 +212,7 @@ position: relative;
 .content_img_in p{
     /* border: 1px solid yellow; */
     font-size: 30px;
-    background-color: rgba(255, 255, 255, 0.685);
+    background-color: rgba(255, 255, 255, 0.911);
     width: 700px;
     /* height: 50px; */
     border-radius: 20px;
@@ -218,15 +222,17 @@ position: relative;
 
 .content_img_in p{
     position: absolute;
-    top: 70%;
+    top: 55%;
     left: 450px;
+    padding: 5px;
 }
 
 
 .content_img_in_two p{
     position: absolute;
-    top: 70%;
+    top: 55%;
     right: 450px;
+    padding: 5px;
 }
 
 .clear{
