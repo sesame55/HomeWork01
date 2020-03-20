@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="../HomeWork01/CSS/index-2.css">
     <link rel="stylesheet" href="../HomeWork01/CSS/index-2-content.css">
     <link rel="stylesheet" href="../HomeWork01/CSS/index-2_rwd.css">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -21,6 +20,7 @@
             });
         });
     </script>
+
     <title>DA106_G2_TRY2</title>
 </head>
 
@@ -187,34 +187,49 @@
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, beatae.</p>
                 <div class="content_box">
                     <div class="content_box_image">
-                        <div class="content_box_img">
-                            <a href="#">
-                            <div class="content_img_in">
-                                <img src="../HomeWork01/img/img-1.jpg" alt="">
+                        <div data-aos="fade-up" data-aos-duration="3000">
+
+                            <div class="content_box_img">
+                                <a href="#">
+                                    <div class="content_img_in">
+                                        <img src="../HomeWork01/img/img-1.jpg" alt="">
+                                    </div>
+                                    <div class="content_img_in">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, mollitia.
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
                             </div>
-                            <div class="content_img_in">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, mollitia.</p>
-                            </div>
-                            </a>
-                            <div class="clear"></div>
                         </div>
-                        <div class="content_box_img">
-                            <div class="content_img_in_two">
-                                <img src="../HomeWork01/img/img-6.jpg" alt="">
+
+                        <div data-aos="fade-up" data-aos-duration="3000">
+                            <div class="content_box_img">
+                                <a href="">
+                                    <div class="content_img_in_two">
+                                        <img src="../HomeWork01/img/img-6.jpg" alt="">
+                                    </div>
+                                    <div class="content_img_in_two">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, mollitia.
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
                             </div>
-                            <div class="content_img_in_two">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, mollitia.</p>
-                            </div>
-                            <div class="clear"></div>
                         </div>
-                        <div class="content_box_img">
-                            <div class="content_img_in">
-                                <img src="../HomeWork01/img/img-4.jpg" alt="">
+                        <div data-aos="fade-up" data-aos-duration="3000">
+                            <div class="content_box_img">
+                                <a href="">
+                                    <div class="content_img_in">
+                                        <img src="img/img-4.jpg" alt="">
+                                    </div>
+                                    <div class="content_img_in">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, mollitia.
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="clear"></div>
                             </div>
-                            <div class="content_img_in">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, mollitia.</p>
-                            </div>
-                            <div class="clear"></div>
                         </div>
                     </div>
                 </div>
@@ -293,6 +308,10 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

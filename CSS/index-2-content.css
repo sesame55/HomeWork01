@@ -160,6 +160,8 @@
        width: 100%;
        margin-top: 20px;
        margin-bottom: 20px;
+       /* margin-left: -20%;
+       margin-right: -20%; */
 }
 
 .content_box_img{
@@ -168,6 +170,8 @@ position: relative;
  /* border: 1px solid green; */
  vertical-align: middle;
  text-align: center;
+
+ /* margin: -20%; */
 }
 
 .content_img_in_two,
@@ -179,14 +183,14 @@ position: relative;
 }
 .content_img_in{
     float: left;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 
 .content_img_in_two{
     /* margin-top: -50px;
     margin-right: 50px; */
-    margin-right: 100px;
+    margin-right: 50px;
     float: right;
     /* background-color:#fff; */
 }
