@@ -198,7 +198,7 @@ margin-left: 150px;
   margin-top: 12px;
   font-family: "微軟正黑體";
   color: #fff;
-  background-color:#31560e;
+  background-color: #31560e;
   font-size: 20px;
   width: 80px;
   text-align: center;
@@ -213,7 +213,7 @@ margin-left: 150px;
   /* padding-top: 1px; */
   /* border-bottom: 3px solid #31560e; */
   color: #31560e;
-  background-color:#fff;
+  background-color: #fff;
   font-weight: bold;
 }
 
@@ -225,19 +225,18 @@ margin-left: 150px;
   fill: #31560e;
 }
 
-.nav_icon img{
+.nav_icon img {
   text-decoration: none;
 }
 
-
 /* 購物車 */
-.shopping_car a{
+.shopping_car a {
   display: block;
   color: #31560e;
   width: 80px;
   text-align: center;
   padding: 3px;
-  margin-right:250px;
+  margin-right: 250px;
   margin-top: 12px;
   font-size: 20px;
 }
@@ -286,37 +285,43 @@ video {
   text-align: center;
   /* line-height: 100px; */
   display: flex;
-  justify-content:center; 
-  align-items:center;
-
+  justify-content: center;
+  align-items: center;
 }
 
-.video_img{
-   /* border: 1px solid yellow; */
+.video_center {
   position: absolute;
-  top: 37%;
+  top: 300px;
+  width: 100%;
+  /* border: 2px solid green; */
+}
+
+.video_img {
+  /* border: 1px solid yellow; */
+  /* position: absolute;
+  top: 37%; */
   /* left: 0; */
 }
 
-.video_text{
-   /* border: 1px solid red; */
+.video_text {
+  /* border: 1px solid red; */
+width: 100%;
   position: absolute;
-  top: 3%;
+  top: 200px;
   /* left: 0; */
 }
 
 .video_text p {
-
   text-align: center;
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* border: 1px solid red; */
-  margin-top: 500px;
+  /* margin-top: 500px; */
 }
 
 .video_img img {
   width: 190px;
-  
+
   /* display: block; */
   /* margin-top: 300px; */
   vertical-align: middle;
@@ -324,13 +329,13 @@ video {
 }
 
 /* 向下箭頭 */
-.scroll{
+.scroll {
   position: absolute;
-  top:85%;
+  top: 80%;
   width: 100%;
   display: flex;
-  justify-content:center; 
-  align-items:center; 
+  justify-content: center;
+  align-items: center;
   /* left: 50%; */
 }
 
@@ -338,7 +343,7 @@ video {
   text-align: center;
 }
 
-.scroll img{
+.scroll img {
   width: 80px;
 }
 
