@@ -1,9 +1,16 @@
+body {
+    background-color: #f7f4e8;
+    height: 100vh;
+}
+
 /* 背景 */
 .wrap {
+    position: relative;
     background-color: #f7f4e8;
     margin: 0 auto;
     overflow: hidden;
     width: 100%;
+    min-height: 100%;
 }
 
 /* 上方選單 */
@@ -224,7 +231,6 @@ video {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* border: 1px solid red; */
-
 }
 
 .video_img img {
@@ -253,16 +259,32 @@ video {
 
 /* 頁尾 */
 .footer {
+    margin-top: 10px;
     background-color: #0b022b;
     height: 100px;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    /* border: 100px solid green; */
+    z-index: 75;
 }
 
 /* 頁尾文字 */
-.footer p {
-    display: block;
+.footer_text {
+    background-color: #0b022b;
+    width: 100%;
     position: absolute;
     bottom: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 80;
+}
+
+.footer_text p {
+    background-color: #0b022b;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -270,7 +292,9 @@ video {
 }
 
 /* 外連結*/
+
 .link_out {
+    background-color: #0b022b;
     width: 100%;
     position: absolute;
     bottom: 38px;
@@ -280,6 +304,7 @@ video {
     align-items: center;
     z-index: 80;
 }
+
 .link_out img {
     width: 50%;
     height: auto;
