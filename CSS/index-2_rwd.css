@@ -1,20 +1,63 @@
 /*RWD*/
+/* 觸發點和設定有20px的差距，到學校再試試看 */
 
-/* @media (min-width: 1200px) and (max-width: 1440px) {
-  .content_left {
-    
-  }
+@media (max-width: 1460px) {  /*1440*/
+    /* 上方標題 */
+    .nav_img {
+        /* margin-left: 100px; */
+    }
+    .nav {
+        padding-left: 400px;
+    }
+    .nav span {
+        /* margin-left: 170px; */
+    }
+
+    /* video圖案文字 */
+
+}
+
+@media (max-width: 1220px) {  /*1200*/
+    /* 上方標題 */
+    .nav_img {
+        /* margin-left: 80px; */
+    }
+    .nav {
+        padding-left: 370px;
+    }
+    .nav span {
+        /* margin-left: 150px; */
+    }
+
+    /* video圖案文字 */
+    .video_center{
+      top:20%;
+    }
+
 }
 
 
-/* @media (max-width: 960px) {
-  .content_left {
-    
-  }
+@media (max-width: 980px) {  /*960*/
+    /* 上方標題 */
+    .nav_img {
+        /* margin-left: 50px; */
+        /* border: 1px solid green; */
+    }
+    .nav {
+        padding-left: 300px;
+    }
+    .nav span {
+        /* margin-left: 120px; */
+    }
+    .nav ul li{
+      max-width: 7vw;
+    }
+
+
+}
+
+@media (max-width: 767px) {
 }
 
 @media (max-width: 375px) {
-  .content_left {
-  
-  }
-} */
+}

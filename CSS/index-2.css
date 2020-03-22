@@ -67,7 +67,7 @@
     left: 1%; /* 調整位置*/
     top: 40px; /* 向下避免遮住上層 */
     background-color: #31560e;
-    width: 8vw;
+    max-width: 8vw;
 }
 
 .nav_next li:hover ul {
@@ -100,7 +100,8 @@
     width: 50px;
     height: auto;
     vertical-align: middle;
-    margin-left: 150px;
+    /* margin-left: 150px; */
+    margin-left: 8%;
     background-color: #fff;
 }
 /* 
@@ -110,7 +111,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 220px;
+    /* margin-left: 220px; */
+    margin-left: 13%;
     margin-top: 12px;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -206,7 +208,7 @@ video {
 
 .video_center {
     position: absolute;
-    top: 300px;
+    top: 30%;
     width: 100%;
     /* border: 2px solid green; */
 }
