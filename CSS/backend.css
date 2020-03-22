@@ -74,17 +74,22 @@ body {
 /* 下方圖片 */
 .bottom_img {
     position: absolute;
-    left: -165%;
-    bottom: -75%;
-    width: 100%;
-    height: 100%;
+    left: -75%;
+    bottom:-8%;
+    width: 500px;
+    /* height: 100%; */
     z-index: 50;
+    /* border: 1px solid green; */
     transform: rotate(15deg);
 }
 
+.bottom_img img{
+    width: 100%;
+}
+
 .bottom_img:hover {
-    left: -120%;
-    bottom: -78%;
+    left: -55%;
+    /* bottom: 0%; */
     transform: rotate(5deg);
 }
 
@@ -94,7 +99,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-  padding-left: 260px;
+    padding-left: 260px;
     color: #fff;
     /* padding-left: 10px; */
     width: 100%;
@@ -107,7 +112,7 @@ body {
     right: 0;
     width: 100%;
     height: 65px;
- /* border: 1px solid blue; */
+    /* border: 1px solid blue; */
     /* background-color: #f3f2ef; */
     background-color: #ffd46e;
 }
@@ -129,20 +134,18 @@ body {
     width: 40px;
     /* margin-top: 10px; */
     margin-left: 300px;
-     /* border: 1px solid red; */
+    /* border: 1px solid red; */
     /* fill: #31560e; */
 }
 
-
 /* 中間標題 */
-.content_right_title{
+.content_right_title {
     width: 100%;
     padding-left: 100px;
     margin-bottom: 40px;
     /* padding-top: 120px; */
     font-size: 30px;
     /* border: 1px solid green; */
-
 }
 
 .content_right_title p {
@@ -151,7 +154,6 @@ body {
     font-family: '微軟正黑體';
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
-
 
 /* 中間表格內容 */
 
@@ -181,7 +183,7 @@ body {
     color: #2f3136;
     font-size: 20px;
     height: 40px;
-     vertical-align: middle;
+    vertical-align: middle;
 }
 
 .table_style td {
@@ -198,12 +200,13 @@ body {
     width: 100px;
 }
 
-.table_chang_bgc{
+.table_chang_bgc {
     background-color: #f3f2ef;
 }
 
 /* 文字測試 */
-.content_text p{
+.content_text p {
     color: #25272c;
     margin: 20px;
     font-size: 30px;
+}
