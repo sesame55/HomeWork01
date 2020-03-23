@@ -118,6 +118,12 @@
     /* 上方選單圖案 */
     .nav_img {
         display: none;
-        margin-left: 17%;
     }
+    
+
+    .member{
+        display: block;
+        width: 30px;
+    }
+
 }
