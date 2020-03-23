@@ -15,66 +15,109 @@
 		} */
 
 /*RWD*/
-/* 觸發點和設定有20px的差距，到學校再試試看 */
 
-@media (max-width: 1460px) {  /*1440*/
-    /* 上方標題 */
+@media screen and (max-width: 1460px) {
+    /* 購物車圖案 */
+    .shopping_car {
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    /*1200*/
+    /* 上方選單圖案 */
     .nav_img {
-        /* margin-left: 100px; */
+        margin-left: 3%;
     }
-    .nav {
-        padding-left: 400px;
-    }
+
+    /* 上方選單-camping man 標題 */
     .nav span {
-        /* margin-left: 170px; */
+        margin-left: 10%;
+    }
+    nav_next li ul li {
+        width: 10%;
+    }
+
+    /* 登入選項 */
+    .sing_in {
+        display: none;
+    }
+
+    /* 頭像 */
+    .member {
+        display: block;
+        width: 70px;
+        margin-right: 2.5%;
+        margin-top: 10px;
+        transform: scaleX(-1); /*水平翻轉*/
+    }
+
+    /* 購物車圖案 */
+    .shopping_car {
+        right: 10%;
     }
 
     /* video圖案文字 */
-
+    .video_center {
+        top: 20%;
+    }
 }
 
-@media (max-width: 1220px) {  /*1200*/
-    /* 上方標題 */
-    .nav_img {
-        /* margin-left: 80px; */
+@media screen and (max-width: 980px) {
+    /* 頭像 */
+    .member {
+        width: 50px;
+        margin-right: 2.5%;
     }
-    .nav {
-        padding-left: 370px;
+    /* 上方選單 */
+    .nav ul li {
+        width: 11vh;
     }
+    .nav_next li ul,
+    .nav_next li ul li {
+        width: 12vh;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    /* 上方選單-camping man 標題 */
     .nav span {
-        /* margin-left: 150px; */
+        display: none;
     }
-
-    /* video圖案文字 */
-    .video_center{
-      top:20%;
-    }
-
-}
-
-
-@media (max-width: 980px) {  /*960*/
-    /* 上方標題 */
-    .nav_img {
-        /* margin-left: 50px; */
-        /* border: 1px solid green; */
-    }
+    /* 上方選單 */
     .nav {
-        padding-left: 300px;
+        padding-left: 12%;
     }
+    .nav ul li {
+        width: 13vh;
+    }
+    .nav_next li ul li {
+        /* max-width: 100%; */
+        display: none;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    /* 購物車圖案 */
+    .shopping_car {
+        display: none;
+    }
+    .member {
+        display: none;
+    }
+
+    /* 上方選單 */
+    .nav ul li {
+        display: none;
+    }
+    /* 上方選單標題 */
     .nav span {
-        /* margin-left: 120px; */
+        display: block;
+        margin-left: 35%;
     }
-    .nav ul li{
-      max-width: 7vw;
+    /* 上方選單圖案 */
+    .nav_img {
+        display: none;
+        margin-left: 17%;
     }
-
-
 }
-
-@media (max-width: 767px) {
-}
-
-@media (max-width: 375px) {
-}
-

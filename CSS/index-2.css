@@ -26,7 +26,7 @@ body {
 }
 
 .nav {
-    padding-left: 450px;
+    padding-left: 30%;
     position: relative;
     width: 100vw;
     /* border: 1px solid green ; */
@@ -74,7 +74,7 @@ body {
     left: 1%; /* 調整位置*/
     top: 40px; /* 向下避免遮住上層 */
     background-color: #31560e;
-    max-width: 8vw;
+    width: 8vw;
 }
 
 .nav_next li:hover ul {
@@ -99,7 +99,7 @@ body {
     background-color: #fff;
 }
 
-/* 上方固定選單-左側圖案 */
+/* 上方固定選單-左側圖案-最左邊那個黑白色的山和帳篷 */
 .nav_img {
     position: fixed;
     top: 0;
@@ -113,7 +113,7 @@ body {
 }
 /* 
 
-/* 上方固定選單標題 */
+/* 上方固定選單標題-camping man */
 .nav span {
     position: absolute;
     top: 0;
@@ -128,6 +128,7 @@ body {
 }
 
 /* 註冊 / 登入 /購物車*/
+.member,
 .shopping_car,
 .sing_in {
     position: fixed;
@@ -160,6 +161,10 @@ body {
     margin-bottom: 1px;
 }
 
+.member {
+    display: none;
+}
+
 /* 上方欄位文字前方圖示 */
 .nav_icon {
     text-decoration: none;
@@ -167,28 +172,28 @@ body {
     width: 25px;
     fill: #31560e;
 }
-
 .nav_icon img {
     width: 25px;
     vertical-align: middle;
 }
 
 /* 購物車圖案 */
-.shopping_car a {
+.shopping_car{
+    right: 15%;
+}
+
+.shopping_car a {  
     display: block;
     color: #31560e;
-    width: 80px;
     text-align: center;
     padding: 3px;
-    margin-right: 220px;
     margin-top: 7px;
     font-size: 20px;
 }
 
 .shopping_car img {
-    width: 30px;
+    width: 30px;   
 }
-
 
 /* 頁尾 */
 .footer {
