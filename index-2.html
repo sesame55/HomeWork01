@@ -19,9 +19,17 @@
                     scrollTop: '850px'
                 }, 2000);
             });
+            $("#btn").click(function (e) {
+                // e.preventDefault();
+                $('.phone_nav').toggleClass('active');
+            });
         });
     </script>
-
+    <style>
+        .active {
+            transform: translateX(0);
+        }
+    </style>
     <title>Camping_Man_DA106_G2</title>
 </head>
 
@@ -106,6 +114,8 @@
                 <div class="member">
                     <a href="#"><img src="img/camping_people.svg" alt=""></a>
                 </div>
+
+
             </div>
         </div>
 
@@ -305,7 +315,23 @@
                 <p>Copyright © 2020 DA106 G2</p>
             </div>
         </div>
+
+        <!-- 手機用側邊按鈕 -->
+        <div class="phone_btn" id="btn">
+            <a href="#"><img src="img/menu.svg" alt=""></a>
+        </div>
+        <!-- 手機板用的小選單 -->
+        <div class="phone_nav ">
+            <ul>
+                <li><a href="#">揪 團</a></li>
+                <li><a href="#">商 城</a></li>
+                <li><a href="#">日 誌</a></li>
+                <li><a href="#">直 播</a></li>
+                <li><a href="#">訂 位</a></li>
+            </ul>
+        </div>
     </div>
+
 
     <!-- content中段不規則圖片引用的動畫效果 -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

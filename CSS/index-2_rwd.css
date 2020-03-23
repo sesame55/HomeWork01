@@ -119,11 +119,63 @@
     .nav_img {
         display: none;
     }
-    
 
-    .member{
+    /* 頭像 */
+    .member {
         display: block;
         width: 30px;
     }
 
+    /* 手機板按鈕 */
+    .phone_btn {
+        display: block;
+        width: 30px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+        margin-left: 10px;
+        z-index: 300;
+    }
+
+    /* #sideMenu--active:checked+.sideMenu {
+    transform: translateX(0);
+} */
+    /* 手機板選單 */
+    .phone_nav {
+        margin-top: 50px;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 500;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        /* box-shadow: 1px 1px 1px 1px #31560e; */
+    }
+    .phone_nav ul {
+        width: 100%;
+        background-color: #f7f4e8;
+        /* height: 50px; */
+    }
+
+    .phone_nav ul li {
+        /* height: 50px; */
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #31560e;
+    }
+
+    .phone_nav ul li a {
+        display: block;
+        line-height: 50px;
+        /* background-color: #fff; */
+        color: #31560e;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        font-family: '微軟正黑體';
+        font-size: 44px;
+    }
 }

@@ -161,9 +161,13 @@ body {
     margin-bottom: 1px;
 }
 
+/* 最大寬度時隱藏 */
+.phone_btn,
+.phone_nav,
 .member {
     display: none;
 }
+
 
 /* 上方欄位文字前方圖示 */
 .nav_icon {
