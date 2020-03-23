@@ -1,3 +1,19 @@
+/* 參考-建議直接寫在原本檔案裡 */
+/* 		@media screen and (max-width: 1680px) {
+		}
+
+		@media screen and (max-width: 1280px) {
+		}
+
+		@media screen and (max-width: 980px) {
+		}
+
+		@media screen and (max-width: 736px) {
+		}
+
+		@media screen and (max-width: 480px) {
+		} */
+
 /*RWD*/
 /* 觸發點和設定有20px的差距，到學校再試試看 */
 
@@ -62,18 +78,3 @@
 @media (max-width: 375px) {
 }
 
-/* 參考-建議直接寫在原本檔案裡 */
-/* 		@media screen and (max-width: 1680px) {
-		}
-
-		@media screen and (max-width: 1280px) {
-		}
-
-		@media screen and (max-width: 980px) {
-		}
-
-		@media screen and (max-width: 736px) {
-		}
-
-		@media screen and (max-width: 480px) {
-		} */
