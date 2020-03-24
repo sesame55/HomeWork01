@@ -231,26 +231,18 @@ video {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-    /* margin-left: -20%;
-       margin-right: -20%; */
 }
 
 .content_box_img {
     position: relative;
     width: 100%;
-    /* border: 1px solid green; */
     vertical-align: middle;
     text-align: center;
-
-    /* margin: -20%; */
 }
 
 .content_img_in_two,
 .content_img_in {
     width: 500px;
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
 }
 .content_img_in {
     float: left;
@@ -258,11 +250,9 @@ video {
 }
 
 .content_img_in_two {
-    /* margin-top: -50px;
-    margin-right: 50px; */
-    margin-right: 100px;
+    margin-right: 50px;
     float: right;
-    /* background-color:#fff; */
+
 }
 
 .content_img_in img {
@@ -305,7 +295,7 @@ video {
 .content_img_in_two p {
     position: absolute;
     top: 55%;
-    right: 450px;
+    right: 400px;
     padding: 5px;
     display: block;
     clip-path: polygon(15% 0, 100% 14%, 92% 89%, 0% 100%);

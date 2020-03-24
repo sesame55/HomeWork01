@@ -41,7 +41,8 @@
 
   /* 購物車圖案 */
   .shopping_car {
-    right: 10%;
+    /* right: 10%; */
+    display: none;
   }
 
   /* video圖案文字 */
