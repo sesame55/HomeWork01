@@ -27,9 +27,9 @@ body {
 
 .nav {
     padding-left: 30%;
-    position: relative;
+    position: fixed;
     width: 100vw;
-    /* border: 1px solid green ; */
+    white-space:nowrap;
 }
 
 /* 選單第1層 */
