@@ -17,188 +17,240 @@
 /*RWD*/
 
 @media screen and (max-width: 1460px) {
-    /* 購物車圖案 */
-    .shopping_car {
-        right: 20%;
-    }
+  /* 購物車圖案 */
+  .shopping_car {
+    right: 20%;
+  }
 }
 
 @media screen and (max-width: 1220px) {
-    /*1200*/
-    /* 上方選單圖案 */
-    .nav_img {
-        margin-left: 3%;
-    }
+  /*1200*/
+  /* 上方選單圖案 */
+  .nav_img {
+    margin-left: 3%;
+  }
 
-    /* 上方選單 */
-    .nav ul li {
-        /* width: 11vh; */
-        width: 120px;
-    }
-    /* 上方選單-camping man 標題 */
-    .nav span {
-        margin-left: 10%;
-    }
-    nav_next li ul li {
-        width: 10%;
-    }
+  /* 上方選單 */
+  .nav ul li {
+    /* width: 11vh; */
+    width: 120px;
+  }
+  /* 上方選單-camping man 標題 */
+  .nav span {
+    margin-left: 10%;
+  }
+  nav_next li ul li {
+    width: 10%;
+  }
 
-    /* 登入選項 */
-    .sing_in {
-        display: none;
-    }
+  /* 登入選項 */
+  .sing_in {
+    display: none;
+  }
 
-    /* 頭像 */
-    .member {
-        display: block;
-        width: 70px;
-        margin-right: 2.5%;
-        margin-top: 10px;
-        transform: scaleX(-1); /*水平翻轉*/
-    }
+  /* 頭像 */
+  .member {
+    display: block;
+    width: 70px;
+    margin-right: 2.5%;
+    margin-top: 10px;
+    transform: scaleX(-1); /*水平翻轉*/
+  }
 
-    /* 購物車圖案 */
-    .shopping_car {
-        right: 10%;
-    }
+  /* 購物車圖案 */
+  .shopping_car {
+    right: 10%;
+  }
 
-    /* video圖案文字 */
-    .video_center {
-        top: 20%;
-    }
+  /* video圖案文字 */
+  .video_center {
+    top: 20%;
+  }
 
-    /* 頁尾 */
-    .footer{
-        height: 80px;
-    }
-    .footer_text{
-        bottom: 8px;
-    }
-    .link_out{
-        bottom: 28px;
-    }
-    .link_out img{
-        margin-top: 8px;
-    }
+  /* 頁尾 */
+  .footer {
+    height: 80px;
+  }
+  .footer_text {
+    bottom: 8px;
+  }
+  .link_out {
+    bottom: 28px;
+  }
+  .link_out img {
+    margin-top: 8px;
+  }
 }
 
 @media screen and (max-width: 980px) {
-    /* 頭像 */
-    .member {
-        width: 50px;
-        margin-right: 2.5%;
-    }
-    /* 上方選單 */
-    .nav ul li {
-        /* width: 11vh; */
-        width: 100px;
-    }
-    .nav_next li ul,
-    .nav_next li ul li {
-        width: 12vh;
-    }
+  /* 頭像 */
+  .member {
+    width: 50px;
+    margin-right: 2.5%;
+  }
+  /* 上方選單 */
+  .nav_img {
+    margin-left: 5%;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+  }
+  .nav ul li {
+    /* width: 11vh; */
+    width: 100px;
+    /* border: 1px solid green; */
+  }
+  .nav_next li ul,
+  .nav_next li ul li {
+    width: 12vh;
+  }
+  /* video圖案文字 */
+  .video_center {
+    display: none;
+  }
+  .scroll {
+    display: none;
+  }
+  .nav span {
+    display: none;
+  }
+  .shopping_car {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 820px) {
-    /* 上方選單-camping man 標題 */
-    .nav span {
-        display: none;
-    }
-    /* 上方選單 */
-    .nav {
-        padding-left: 12%;
-    }
-    .nav ul li {
-        /* width: 13vh; */
-    }
-    .nav_next li ul li {
-        /* max-width: 100%; */
-        display: none;
-    }
-    .shopping_car{
-        /* display: none; */
-    }
+  /* 上方選單-camping man 標題 */
+  .nav span {
+    display: none;
+  }
+  /* 上方選單 */
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid green; */
+    /* padding-left: 12%; */
+    /* text-align: center; */
+    /* margin-left: 10%; */
+  }
+  .nav ul li {
+    /* width: 13vh; */
+    /* width: 50px; */
+  }
+  .nav_next li ul li {
+    /* max-width: 100%; */
+    display: none;
+  }
+  .shopping_car {
+    /* display: none; */
+  }
+  .member {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .shopping_car {
+    display: none;
+  }
+  .nav_img {
+    display: none;
+  }
+  /* 上方選單 */
+  .nav {
+    padding-left: 2%;
+  }
+  .nav ul li {
+    /* width: 13vh; */
+    width: 80px;
+  }
+  .member {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 435px) {
-    /* 購物車圖案 */
-    .shopping_car {
-        display: none;
-    }
-    .member {
-        display: none;
-    }
+  /* 購物車圖案 */
+  .shopping_car {
+    display: none;
+  }
+  .member {
+    display: none;
+  }
 
-    /* 上方選單 */
-    .nav ul li {
-        display: none;
-    }
-    /* 上方選單標題 */
-    .nav span {
-        display: block;
-        margin-left: 35%;
-    }
-    /* 上方選單圖案 */
-    .nav_img {
-        display: none;
-    }
+  /* 上方選單 */
+  .nav ul li {
+    display: none;
+  }
+  /* 上方選單標題 */
+  .nav span {
+    display: block;
+    margin-left: 35%;
+  }
+  /* 上方選單圖案 */
+  .nav_img {
+    display: none;
+  }
 
-    /* 頭像 */
-    .member {
-        display: block;
-        width: 30px;
-    }
+  /* 頭像 */
+  .member {
+    display: block;
+    width: 30px;
+  }
 
-    /* 手機板按鈕 */
-    .phone_btn {
-        display: block;
-        width: 30px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin-top: 10px;
-        margin-left: 10px;
-        z-index: 300;
-    }
+  /* 手機板按鈕 */
+  .phone_btn {
+    display: block;
+    width: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 300;
+  }
 
+  /* 手機板選單 */
+  .phone_nav {
+    margin-top: 51px;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    height: 100vh;
+    background-color: #ffffffe7;
+  }
+  .phone_nav ul {
+    width: 100%;
+    background-color: #f7f4e8;
+    /* height: 50px; */
+  }
 
-    /* 手機板選單 */
-    .phone_nav {
-        margin-top: 51px;
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 500;
-        transform: translateX(-100%);
-        transition: 0.5s;
-        height: 100vh;
-        background-color: #ffffffe7;
-    }
-    .phone_nav ul {
-        width: 100%;
-        background-color: #f7f4e8;
-        /* height: 50px; */
-    }
+  .phone_nav ul li {
+    /* height: 50px; */
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #31560e;
+  }
 
-    .phone_nav ul li {
-        /* height: 50px; */
-        width: 100%;
-        padding: 10px;
-        border-bottom: 1px solid #31560e;
-    }
-
-    .phone_nav ul li a {
-        display: block;
-        line-height: 30px;
-        /* background-color: #fff; */
-        color: #31560e;
-        text-decoration: none;
-        width: 100%;
-        text-align: center;
-        font-family: '微軟正黑體';
-        font-size: 30px;
-        /* font-weight: bold; */
-    }
+  .phone_nav ul li a {
+    display: block;
+    line-height: 30px;
+    /* background-color: #fff; */
+    color: #31560e;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-family: "微軟正黑體";
+    font-size: 30px;
+    /* font-weight: bold; */
+  }
 }
