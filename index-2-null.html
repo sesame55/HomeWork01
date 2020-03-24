@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="CSS/content_null.css">
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function (e) {
+                // e.preventDefault();
+                $('.phone_nav').toggleClass('active');
+            });
+        });
+    </script>
+    <style>
+        .active {
+            transform: translateX(0);
+        }
+    </style>
     <title>Camping_Man_NULL</title>
 </head>
 
@@ -146,7 +159,45 @@
                 <p>Copyright © 2020 DA106 G2</p>
             </div>
         </div>
-
+        <!-- 手機用側邊按鈕 -->
+        <div class="phone_btn" id="btn">
+            <a href="#"><img src="img/menu.svg" alt=""></a>
+        </div>
+        <!-- 手機板用的小選單 -->
+        <div class="phone_nav ">
+            <ul>
+                <li><a href="#">
+                        <div class="nav_icon">
+                            <img src="img/fire.svg" alt="">
+                        </div>
+                        揪 團
+                    </a></li>
+                <li><a href="#">
+                        <div class="nav_icon">
+                            <img src="img/shopping-bag.svg" alt="">
+                        </div>
+                        商 城
+                    </a></li>
+                <li><a href="#">
+                        <div class="nav_icon">
+                            <img src="img/notebook.svg" alt="">
+                        </div>
+                        日 誌
+                    </a></li>
+                <li><a href="#">
+                        <div class="nav_icon">
+                            <img src="img/live.svg" alt="">
+                        </div>
+                        直 播
+                    </a></li>
+                <li><a href="#">
+                        <div class="nav_icon">
+                            <img src="img/camping.svg" alt="">
+                        </div>
+                        訂 位
+                    </a></li>
+            </ul>
+        </div>
 
     </div>
 
