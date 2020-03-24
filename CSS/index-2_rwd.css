@@ -1,20 +1,3 @@
-/* 參考-建議直接寫在原本檔案裡 */
-/* 		@media screen and (max-width: 1680px) {
-		}
-
-		@media screen and (max-width: 1280px) {
-		}
-
-		@media screen and (max-width: 980px) {
-		}
-
-		@media screen and (max-width: 736px) {
-		}
-
-		@media screen and (max-width: 480px) {
-		} */
-
-/*RWD*/
 
 @media screen and (max-width: 1460px) {
   /* 購物車圖案 */
@@ -32,7 +15,6 @@
 
   /* 上方選單 */
   .nav ul li {
-    /* width: 11vh; */
     width: 120px;
   }
   /* 上方選單-camping man 標題 */
@@ -99,9 +81,7 @@
     padding-left: 15%;
   }
   .nav ul li {
-    /* width: 11vh; */
     width: 100px;
-    /* border: 1px solid green; */
   }
   .nav_next li ul,
   .nav_next li ul li {
@@ -132,22 +112,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid green; */
-    /* padding-left: 12%; */
-    /* text-align: center; */
-    /* margin-left: 10%; */
   }
-  .nav ul li {
-    /* width: 13vh; */
-    /* width: 50px; */
-  }
+
   .nav_next li ul li {
-    /* max-width: 100%; */
     display: none;
   }
-  .shopping_car {
-    /* display: none; */
-  }
+
   .member {
     display: none;
   }
@@ -165,7 +135,6 @@
     padding-left: 2%;
   }
   .nav ul li {
-    /* width: 13vh; */
     width: 80px;
   }
   .member {
@@ -231,11 +200,9 @@
   .phone_nav ul {
     width: 100%;
     background-color: #f7f4e8;
-    /* height: 50px; */
   }
 
   .phone_nav ul li {
-    /* height: 50px; */
     width: 100%;
     padding: 10px;
     border-bottom: 1px solid #31560e;
@@ -244,13 +211,11 @@
   .phone_nav ul li a {
     display: block;
     line-height: 30px;
-    /* background-color: #fff; */
     color: #31560e;
     text-decoration: none;
     width: 100%;
     text-align: center;
     font-family: "微軟正黑體";
     font-size: 30px;
-    /* font-weight: bold; */
   }
 }

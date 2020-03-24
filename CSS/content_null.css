@@ -38,6 +38,7 @@ padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .table_style {
@@ -46,11 +47,14 @@ padding: 20px;
     border-collapse: collapse;
     padding: 5px;
     font-family: '微軟正黑體';
+    
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
+table{
+    overflow-x: auto;
+}
 .table_style th {
-    /* width: 150px; */
     border: 1px dashed #31560e;
     padding: 5px;
     background: #31560e;
@@ -58,10 +62,10 @@ padding: 20px;
     font-size: 20px;
     height: 40px;
     vertical-align: middle;
-
 }
 
 .table_style td {
+    min-width: 100px;
     border: 1px dashed #ffd46e;
     border-bottom: 1px dashed #25272c;
     padding: 5px;

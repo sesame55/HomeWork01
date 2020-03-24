@@ -187,6 +187,7 @@ body {
 }
 
 .table_style td {
+    min-width: 100px;
     border: 1px dashed #ffd46e;
     border-bottom: 1px dashed #25272c;
     padding: 5px;
