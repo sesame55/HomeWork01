@@ -143,7 +143,7 @@
 } */
     /* 手機板選單 */
     .phone_nav {
-        margin-top: 50px;
+        margin-top: 51px;
         display: block;
         position: fixed;
         top: 0;
@@ -152,6 +152,9 @@
         z-index: 500;
         transform: translateX(-100%);
         transition: 0.5s;
+        height: 100vh;
+        background-color: #00000083;
+        /* opacity: 0.5; */
         /* box-shadow: 1px 1px 1px 1px #31560e; */
     }
     .phone_nav ul {
@@ -169,13 +172,14 @@
 
     .phone_nav ul li a {
         display: block;
-        line-height: 50px;
+        line-height: 30px;
         /* background-color: #fff; */
         color: #31560e;
         text-decoration: none;
         width: 100%;
         text-align: center;
         font-family: '微軟正黑體';
-        font-size: 44px;
+        font-size: 30px;
+        font-weight: bold;
     }
 }
