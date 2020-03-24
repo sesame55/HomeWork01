@@ -107,6 +107,10 @@
     .shopping_car {
         display: none;
     }
+    /* 商品 */
+    .show_none1 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -150,6 +154,18 @@
     /* video圖案文字 */
     .video_img img {
         width: 150px;
+    }
+    /* 商城商品 */
+    .show_none2 {
+        display: none;
+    }
+    .content_box_shop img {
+        max-width: 100px;
+    }
+    .show1,
+    .show2{
+      display: block;
+      
     }
 }
 
