@@ -73,7 +73,6 @@
         bottom: 28px;
     }
     .link_out img{
-        width: 45%;
         margin-top: 8px;
     }
 }
@@ -156,9 +155,7 @@
         z-index: 300;
     }
 
-    /* #sideMenu--active:checked+.sideMenu {
-    transform: translateX(0);
-} */
+
     /* 手機板選單 */
     .phone_nav {
         margin-top: 51px;
@@ -171,9 +168,7 @@
         transform: translateX(-100%);
         transition: 0.5s;
         height: 100vh;
-        background-color: #00000083;
-        /* opacity: 0.5; */
-        /* box-shadow: 1px 1px 1px 1px #31560e; */
+        background-color: #ffffffe7;
     }
     .phone_nav ul {
         width: 100%;
