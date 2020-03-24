@@ -1,3 +1,5 @@
+/* 以下內容不留可全刪 */
+
 .content {
   margin-top: 80px;
   margin-bottom: 120px;
@@ -18,73 +20,60 @@
 }
 
 .box2 p {
-     background-color: #f7f4e8;
+  background-color: #f7f4e8;
   font-family: "微軟正黑體";
 }
 
-.box3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #f7f4e8; */
-margin-top: 20px;
-padding: 20px;
+.box3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
 }
 /* 中間表格內容 */
 .content_right_table {
-    width: 100%;
-    /* padding-left: 250px; */
-    /* padding-top: 120px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .table_style {
-    width: 80%;
-    border: 1px dashed #31560e;
-    border-collapse: collapse;
-    padding: 5px;
-    font-family: '微軟正黑體';
-    
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  width: 80%;
+  border: 1px dashed #31560e;
+  border-collapse: collapse;
+  padding: 5px;
+  font-family: "微軟正黑體";
 }
 
-table{
-    overflow-x: auto;
+table {
+  overflow-x: auto;
 }
 .table_style th {
-    border: 1px dashed #31560e;
-    padding: 5px;
-    background: #31560e;
-    color: #fff;
-    font-size: 20px;
-    height: 40px;
-    vertical-align: middle;
+  border: 1px dashed #31560e;
+  padding: 5px;
+  background: #31560e;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  vertical-align: middle;
 }
 
 .table_style td {
-    min-width: 100px;
-    border: 1px dashed #ffd46e;
-    border-bottom: 1px dashed #25272c;
-    padding: 5px;
-    text-align: center;
-    color: #2f3136;
-    vertical-align: middle;
+  min-width: 100px;
+  border: 1px dashed #25272c;
+  padding: 5px;
+  text-align: center;
+  color: #2f3136;
+  vertical-align: middle;
 }
 
 .table_style td img {
-    margin-top: 10px;
-    width: 100px;
+  margin-top: 10px;
+  width: 100px;
 }
 
 .table_chang_bgc {
-    background-color: #c5dfacfb;
+  background-color: #c5dfacfb;
 }
-/* 
-
-<p>簡易CSS格式：<a href="https://purecss.io/">https://purecss.io/</a></p>
-<p>全頁版型：<a href="https://templated.co/">https://templated.co/</a></p>
-<p>彩色icon：<a href="https://www.flaticon.com/">https://www.flaticon.com/</a></p>
-*/
