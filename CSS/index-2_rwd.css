@@ -30,6 +30,11 @@
         margin-left: 3%;
     }
 
+    /* 上方選單 */
+    .nav ul li {
+        /* width: 11vh; */
+        width: 120px;
+    }
     /* 上方選單-camping man 標題 */
     .nav span {
         margin-left: 10%;
@@ -85,7 +90,8 @@
     }
     /* 上方選單 */
     .nav ul li {
-        width: 11vh;
+        /* width: 11vh; */
+        width: 100px;
     }
     .nav_next li ul,
     .nav_next li ul li {
