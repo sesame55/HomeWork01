@@ -163,14 +163,19 @@ video {
 }
 
 .show1,
-.show2{
+.show2,
+.show3,
+.show4{
     display: none;
 }
-.show2{
+.show2,
+.show4{
     transform: scaleX(-1);
 }
 .show1 img,
-.show2 img{
+.show2 img,
+.show3 img,
+.show4 img{
     width: 100%;
     height: 30px;
 }
@@ -233,6 +238,10 @@ video {
 }
 .google_map {
     display: block;
+}
+.google_map iframe{
+    width: 900px;
+    height: 400px;
 }
 
 .addr {
@@ -329,6 +338,4 @@ video {
     clear: both;
 }
 
-/*  */
-.content_five {
-}
+
