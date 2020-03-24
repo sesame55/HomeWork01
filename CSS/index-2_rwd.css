@@ -61,6 +61,21 @@
     .video_center {
         top: 20%;
     }
+
+    /* 頁尾 */
+    .footer{
+        height: 80px;
+    }
+    .footer_text{
+        bottom: 8px;
+    }
+    .link_out{
+        bottom: 28px;
+    }
+    .link_out img{
+        width: 45%;
+        margin-top: 8px;
+    }
 }
 
 @media screen and (max-width: 980px) {
