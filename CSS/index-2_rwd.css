@@ -218,6 +218,9 @@
     .scroll {
         display: none;
     }
+    video{
+        display: none;
+    }
 
     /* 商城商品 */
     .show_none2 {

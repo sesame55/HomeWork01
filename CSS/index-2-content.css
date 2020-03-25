@@ -1,7 +1,7 @@
 /* 影片 */
 .run_video {
     width: 100vw;
-    /* width: 1935px; */
+   background: url(../img/12345679.png);
     position: relative;
     display: flex;
     justify-content: center;
