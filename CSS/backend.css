@@ -1,12 +1,5 @@
-html,
-body {
-    height: 100%;
-    /* background-color: #25272c; */
-    position: relative;
-}
-
 /* 側邊欄 */
-.content_left {
+.nav_left {
     z-index: 500;
     width: 200px;
     height: 100vh;
@@ -80,13 +73,13 @@ body {
 }
 
 .bottom_img:hover {
-    left: -8%;
+    left: -9%;
     transform: rotate(5deg);
 }
 
 
 /* 上方標題 */
-.content_right_top {
+.top {
     position: fixed;
     top: 0;
     right: 0;
@@ -95,7 +88,7 @@ body {
     background-color: #ffd46e;
     z-index: 300;
 }
-.content_right_top p {
+.top p {
     font-size: 35px;
     line-height: 65px;
     color: #2f3136;
@@ -106,7 +99,7 @@ body {
     display: inline-block;
 }
 
-.content_right_top img {
+.top img {
     display: inline-block;
     width: 40px;
     margin-left: 250px;

@@ -1,5 +1,5 @@
 /* 右側欄位 */
-.content_right {
+.content {
     display: flex;
     flex-direction: column;
     padding-left: 210px;
@@ -8,7 +8,7 @@
 }
 
 /* 中間標題 */
-.content_right_title {
+.content_title {
     width: 100%;
     padding-left: 30px;
     margin-bottom: 20px;
@@ -16,14 +16,14 @@
     /* border: 1px solid green; */
 }
 
-.content_right_title p {
+.content_title p {
     padding-top: 120px;
     color: #2f3136;
     font-family: '微軟正黑體',Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* 中間表格內容 */
-.content_right_table {
+.content_table {
     /* width: 100%; */
     display: flex;
     justify-content: center;
