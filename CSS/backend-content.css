@@ -1,0 +1,79 @@
+/* 右側欄位 */
+.content_right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 210px;
+    color: #fff;
+    /* border: 1px solid green; */
+}
+
+/* 中間標題 */
+.content_right_title {
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    /* border: 1px solid green; */
+}
+
+.content_right_title p {
+    padding-top: 120px;
+    color: #2f3136;
+    font-family: '微軟正黑體',Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 中間表格內容 */
+.content_right_table {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px    ;
+    /* border: 1px solid green; */
+}
+
+.table_style {
+    width: 95%;   /* 表格寬度為右側白色區塊的95% */
+    border: 1px dashed #ffd46e;
+    border-collapse: collapse;
+    padding: 5px;
+    font-family: '微軟正黑體',Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.table_style th {
+    border: 1px dashed #ffd46e;
+    padding: 5px;
+    background: #ffd46e;
+    color: #2f3136;
+    font-size: 20px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.table_style td {
+    min-width: 100px;  /*每個td最小寬度為100px*/
+    border: 1px dashed #ffd46e;
+    border-bottom: 1px dashed #25272c;
+    padding: 5px;
+    text-align: center;
+    color: #2f3136;
+    vertical-align: middle;
+}
+
+.table_style td img {
+    margin-top: 10px;
+    width: 100px;
+    /* border: 1px solid green; */
+}
+
+/* 更改間隔背景顏色 */
+.table_chang_bgc {
+    background-color: #ffd46e40;
+}
+
+/* 文字測試 */
+.content_text p {
+    color: #25272c;
+    margin: 20px;
+    font-size: 30px;
+}
