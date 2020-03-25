@@ -1,15 +1,14 @@
-@media screen and (max-width: 1660px){
+@media screen and (max-width: 1660px) {
     .run_video {
         width: 100vw;
-       background: url(../img/12345679.png) no-repeat;
+        background: url(../img/12345679.png) no-repeat;
         min-height: 100vh;
     }
     video {
         width: auto;
-        min-height: 100vh;    
+        min-height: 100vh;
     }
 }
-
 
 @media screen and (max-width: 1460px) {
     /* 購物車圖案 */
@@ -33,7 +32,7 @@
     .nav span {
         margin-left: 10%;
     }
-    .nav_next li ul{
+    .nav_next li ul {
         width: 100%;
     }
     .nav_next li ul li {
@@ -107,7 +106,6 @@
     }
     .nav ul li {
         width: 100px;
-        
     }
     .nav_next li ul,
     .nav_next li ul li {
@@ -230,12 +228,12 @@
     .video_text {
         /* display: none; */
         font-size: 20px;
-        top:150px;
+        top: 150px;
     }
     .scroll {
         display: none;
     }
-    video{
+    video {
         display: none;
     }
 
@@ -250,7 +248,7 @@
     .show2 {
         display: block;
     }
-       .content_box_shop img {
+    .content_box_shop img {
         margin-left: -120px;
         margin-right: -120px;
     }
@@ -284,6 +282,11 @@
 }
 
 @media screen and (max-width: 435px) {
+    /* 移動背景圖片 */
+    .run_video {
+        background-position: right 35% bottom 45%;
+    }
+
     /*商城  */
     .show1,
     .show2 {
