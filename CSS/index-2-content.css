@@ -132,6 +132,7 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid blue; */
 }
 
 .content_box_shop ul li {
@@ -139,10 +140,13 @@ video {
     margin-right: 35px;
     text-align: center;
     font-family: '微軟正黑體';
+    /* border: 1px solid red; */
+
 }
 
 .content_box_shop ul li a {
     text-decoration: none;
+    /* border: 1px solid green; */
 }
 
 .content_box_youtube,

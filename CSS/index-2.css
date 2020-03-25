@@ -89,14 +89,17 @@ body {
 }
 
 .nav_next li ul li a {
+    /* display: block; */
     color: #fff;
     background-color: #31560e;
+    text-align: center;
     /* border: 1 solid red; */
 }
 .nav_next li ul li a:hover {
-    color: #31560e;
+    /* display: block; */
+    /* color: #31560e; */
     font-size: 18px;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 /* 上方固定選單-左側圖案-最左邊那個黑白色的山和帳篷 */

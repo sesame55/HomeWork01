@@ -1,7 +1,7 @@
 @media screen and (max-width: 1660px){
     .run_video {
         width: 100vw;
-       background: url(../img/12345679.png);
+       background: url(../img/12345679.png) no-repeat;
         min-height: 100vh;
     }
     video {
@@ -33,8 +33,11 @@
     .nav span {
         margin-left: 10%;
     }
+    .nav_next li ul{
+        width: 100%;
+    }
     .nav_next li ul li {
-        width: 12%;
+        width: 100%;
     }
 
     /* 登入選項 */
@@ -104,6 +107,7 @@
     }
     .nav ul li {
         width: 100px;
+        
     }
     .nav_next li ul,
     .nav_next li ul li {
