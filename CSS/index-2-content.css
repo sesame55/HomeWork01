@@ -5,14 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-     /* min-width: 100%; */
     min-height: 100vh;
-    /* border:  1px solid green; */
 }
 video {
-    min-height: 100vh;
-    /* min-width: 100%; */
-    
+    min-height: 100vh;    
 }
 .video_img,
 .video_text {
