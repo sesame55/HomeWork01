@@ -1,15 +1,16 @@
 /* 影片 */
 .run_video {
     width: 100vw;
-   background: url(../img/12345679.png);
+   /* background: url(../img/12345679.png); */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 video {
-    min-height: 100vh;    
+    width: 100%;
+    /* min-height: 100vh;     */
 }
 .video_img,
 .video_text {
