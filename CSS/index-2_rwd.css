@@ -215,6 +215,10 @@
         font-size: 20px;
         top:150px;
     }
+    .scroll {
+        display: none;
+    }
+
     /* 商城商品 */
     .show_none2 {
         display: none;
