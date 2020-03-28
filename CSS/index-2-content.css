@@ -126,6 +126,9 @@ video {
     width: 100%;
     /* border: 1px solid red; */
 }
+.content_box_shop a{
+    display: inline-block;
+}
 
 .content_box_youtube,
 .content_box_shop ul {
