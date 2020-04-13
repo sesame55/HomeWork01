@@ -57,6 +57,18 @@
     color: #2f3136;
 }
 
+/* 選單第2層 */
+.dropdown-container{
+display: none;
+}
+
+.dropdown-container ul li a {
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+}
+
+
 /* 下方圖片 */
 .bottom_img {
     position: fixed;
