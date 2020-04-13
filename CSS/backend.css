@@ -62,22 +62,23 @@
 display: none;
 }
 
+.dropdown-container ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .dropdown-container ul li a {
     font-size: 20px;
     line-height: 30px;
     height: 30px;
-    /* background-color: #f3f2ef;
-    color: #2f3136; */
+    width: 60%;
 } 
 
-.dropdown-container ul li:hover {
-   
-  border-bottom: 3px solid #f3f2ef;
-}
 .dropdown-container ul li a:hover{
      background-color:#2f3136 ;
     color: #f3f2ef;
-    /* border-bottom: 3px solid #f3f2ef; */
+    border-bottom: 2px solid #f3f2ef;
 }
 
 
