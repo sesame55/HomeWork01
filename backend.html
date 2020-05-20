@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="CSS/backend.css">
     <!-- 左側選單+上方固定標題 -->
 
-    <link rel="stylesheet" href="CSS/backend-content.css">
+    <!-- <link rel="stylesheet" href="CSS/backend-content.css"> -->
     <!-- 右側內容 -->
 
     <title>BACKEND</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>
@@ -22,34 +23,36 @@
         <div class="nav_left">
             <div class="nav">
                 <div class="nav_top">
-                    <a href="#"">
+                    <a href="#">
                     <img src=" img/logo.jpg" alt="">
                     </a>
                 </div>
                 <div class="nav_next">
-                    <ul>
+                    <ul class="nav_two">
                         <li><a href="#">員工管理</a></li>
                         <li><a href="#">會員管理</a></li>
                         <li><a href="#">訂位管理</a></li>
                         <li><a href="#">營地管理</a></li>
-                        <li class="dropdown-btn">
-                            <a href="#">商城管理</a></li>
-                        <div class="dropdown-container">
-                            <ul>
-                                <li><a href="#">商品管理</a></li>
-                                <li><a href="#">訂單管理</a></li>
-                            </ul>
-                        </div>
-                        <li class="dropdown-btn">
-                            <a href="#">檢舉管理</a> </li>
-                        <div class="dropdown-container">
-                            <ul>
-                                <li><a href="#">揪團檢舉</a></li>
-                                <li><a href="#">會員檢舉</a></li>
-                                <li><a href="#">日誌檢舉</a></li>
-                                <li><a href="#">直播檢舉</a></li>
-                            </ul>
-                        </div>
+                        <!-- <li class="dropdown-btn"> -->
+                        <li><a href="#">商城管理</a>
+                        <!-- <div class="dropdown-container"> -->
+                        <ul>
+                            <li><a href="#">商品管理</a></li>
+                            <li><a href="#">訂單管理</a></li>
+                        </ul>
+        </li>
+                        <!-- </div> -->
+                        <!-- <li class="dropdown-btn"> -->
+                        <li> <a href="#">檢舉管理</a>
+                        <!-- <div class="dropdown-container"> -->
+                        <ul>
+                            <!-- <li><a href="#">揪團檢舉</a></li> -->
+                            <!-- <li><a href="#">會員檢舉</a></li> -->
+                            <li><a href="#">日誌檢舉</a></li>
+                            <li><a href="#">直播檢舉</a></li>
+                        </ul>
+        </li>
+                        <!-- </div> -->
                         <li><a href="#">線上客服</a></li>
                         <li><a href="#">登出</a></li>
                     </ul>
@@ -74,7 +77,7 @@
             <div class="content_title">
                 <p>標題標題標題</p>
             </div>
-            <div class="content_table">
+            <!-- <div class="content_table">
                 <table class="table_style">
                     <tr>
                         <th>頭像</th>
@@ -175,7 +178,7 @@
                         <td>1</td>
                     </tr>
                 </table>
-            </div>
+            </div> -->
             <div class="content_text">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, omnis nemo facere, molestiae officiis
                     magnam consectetur nihil voluptate minima blanditiis autem odio nostrum, sed nam fuga voluptas
@@ -418,7 +421,7 @@
 
     <!-- 收合選單 -->
     <!-- 來源：https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown -->
-    <script>
+    <!-- <script>
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
 
@@ -433,7 +436,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
